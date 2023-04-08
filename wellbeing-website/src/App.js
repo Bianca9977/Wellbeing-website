@@ -14,7 +14,7 @@ export default function App() {
         <Router>
           <div>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/Wellbeing-website" element={<Home />} />
                 <Route path="/recommendation/:mood" element={<MoodRecommendation />} />
             </Routes>
           </div>
