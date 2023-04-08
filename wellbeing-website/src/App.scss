@@ -1,0 +1,91 @@
+@import 'styles/variables.scss';
+@import 'styles/fonts.scss';
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.component-app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(72.79deg, #0F4C81 6.22%, #5CAD8A 62.19%, #90EE90 79.29%, #90EE90 97.42%);
+
+  .container {
+    max-width: 70vw;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+
+    h1 {
+      color: white;
+      font-size: 96px;
+      font-family: 'LuckiestGuy', sans-serif;
+      font-weight: 200;
+      margin: 0;
+      letter-spacing: 6px;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-family: 'Overpass', sans-serif;
+      font-weight: 400;
+      color: white;
+      margin: 0;
+    }
+
+    .react-select__control {
+      max-width: 370px;
+      background-color: white;
+      height: 60px;
+      border-radius: 10px;
+      margin-top: 50px;
+      font-size: 24px;
+      text-align: center;
+      font-family: 'Overpass', sans-serif;
+      font-weight: 500;
+    }
+    
+    .react-select__menu {
+      max-width: 370px;
+      font-size: 24px;
+      text-align: center;
+      font-family: 'Overpass', sans-serif;
+      font-weight: 500;
+
+    
+    }
+
+    .react-select__indicator-separator {
+      display: none;
+    }
+
+    .react-select__indicator {
+      svg {
+        width: 50px;
+        height: 50px;
+        color: $color_orange;
+      }
+    }
+  }
+}
+
+
