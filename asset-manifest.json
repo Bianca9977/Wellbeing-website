@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Wellbeing-website/static/css/main.fc5a56a2.css",
-    "main.js": "/Wellbeing-website/static/js/main.92abdc9c.js",
+    "main.css": "/Wellbeing-website/static/css/main.3a4f23b2.css",
+    "main.js": "/Wellbeing-website/static/js/main.8e8f23d8.js",
     "static/js/787.c86c9a30.chunk.js": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js",
     "static/media/Overpass-Regular.svg": "/Wellbeing-website/static/media/Overpass-Regular.85572dfdc10dae902d36.svg",
     "static/media/Overpass-ExtraLight.svg": "/Wellbeing-website/static/media/Overpass-ExtraLight.be0dc4e47194b65753cf.svg",
@@ -13,6 +13,7 @@
     "static/media/Overpass-ExtraBold.svg": "/Wellbeing-website/static/media/Overpass-ExtraBold.59b26bba73979cdd7b2a.svg",
     "static/media/Overpass-Bold.svg": "/Wellbeing-website/static/media/Overpass-Bold.f416ee7f52b945a75196.svg",
     "static/media/LuckiestGuy-Regular.svg": "/Wellbeing-website/static/media/LuckiestGuy-Regular.f5378756c6ae50e9740b.svg",
+    "static/media/background_options.png": "/Wellbeing-website/static/media/background_options.37ab6fdc44abf17c6532.png",
     "static/media/Overpass-Medium.woff": "/Wellbeing-website/static/media/Overpass-Medium.2033ba7e03a9f9419c6c.woff",
     "static/media/Overpass-SemiBold.woff": "/Wellbeing-website/static/media/Overpass-SemiBold.37ca4c7762ae2147c819.woff",
     "static/media/Overpass-Bold.woff": "/Wellbeing-website/static/media/Overpass-Bold.4e77f183166e78e659a2.woff",
@@ -36,12 +37,12 @@
     "static/media/LuckiestGuy-Regular.woff": "/Wellbeing-website/static/media/LuckiestGuy-Regular.1c53e60577b74ee697a4.woff",
     "static/media/LuckiestGuy-Regular.woff2": "/Wellbeing-website/static/media/LuckiestGuy-Regular.2e77873b13907b8bc87c.woff2",
     "index.html": "/Wellbeing-website/index.html",
-    "main.fc5a56a2.css.map": "/Wellbeing-website/static/css/main.fc5a56a2.css.map",
-    "main.92abdc9c.js.map": "/Wellbeing-website/static/js/main.92abdc9c.js.map",
+    "main.3a4f23b2.css.map": "/Wellbeing-website/static/css/main.3a4f23b2.css.map",
+    "main.8e8f23d8.js.map": "/Wellbeing-website/static/js/main.8e8f23d8.js.map",
     "787.c86c9a30.chunk.js.map": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc5a56a2.css",
-    "static/js/main.92abdc9c.js"
+    "static/css/main.3a4f23b2.css",
+    "static/js/main.8e8f23d8.js"
   ]
 }
