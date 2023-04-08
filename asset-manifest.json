@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Wellbeing-website/static/css/main.c8c30172.css",
+    "main.css": "/Wellbeing-website/static/css/main.fc5a56a2.css",
     "main.js": "/Wellbeing-website/static/js/main.92abdc9c.js",
     "static/js/787.c86c9a30.chunk.js": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js",
-    "static/media/Overpass-Regular.svg": "/Wellbeing-website/static/media/Overpass-Regular.b21ada13fec32915271d.svg",
-    "static/media/Overpass-ExtraLight.svg": "/Wellbeing-website/static/media/Overpass-ExtraLight.1660cff5cdab190f4c14.svg",
-    "static/media/Overpass-Black.svg": "/Wellbeing-website/static/media/Overpass-Black.3c7ab51a2643514656ee.svg",
-    "static/media/Overpass-Thin.svg": "/Wellbeing-website/static/media/Overpass-Thin.76f14284f89056788eb2.svg",
-    "static/media/Overpass-SemiBold.svg": "/Wellbeing-website/static/media/Overpass-SemiBold.a090444f2af9dc50593f.svg",
-    "static/media/Overpass-Medium.svg": "/Wellbeing-website/static/media/Overpass-Medium.3d262104a7cfb350b48d.svg",
-    "static/media/Overpass-Light.svg": "/Wellbeing-website/static/media/Overpass-Light.c4be7749b37a2ddc8583.svg",
-    "static/media/Overpass-ExtraBold.svg": "/Wellbeing-website/static/media/Overpass-ExtraBold.de533dc7b922393e405f.svg",
-    "static/media/Overpass-Bold.svg": "/Wellbeing-website/static/media/Overpass-Bold.4cb926fa9bb02ea1db55.svg",
+    "static/media/Overpass-Regular.svg": "/Wellbeing-website/static/media/Overpass-Regular.85572dfdc10dae902d36.svg",
+    "static/media/Overpass-ExtraLight.svg": "/Wellbeing-website/static/media/Overpass-ExtraLight.be0dc4e47194b65753cf.svg",
+    "static/media/Overpass-Black.svg": "/Wellbeing-website/static/media/Overpass-Black.f9f037eea31aa99b2c15.svg",
+    "static/media/Overpass-Thin.svg": "/Wellbeing-website/static/media/Overpass-Thin.d85d6e36baf0818398d4.svg",
+    "static/media/Overpass-SemiBold.svg": "/Wellbeing-website/static/media/Overpass-SemiBold.66adc6c74fe5b5868a14.svg",
+    "static/media/Overpass-Medium.svg": "/Wellbeing-website/static/media/Overpass-Medium.4815bd3b2e7d37bb5034.svg",
+    "static/media/Overpass-Light.svg": "/Wellbeing-website/static/media/Overpass-Light.08de53b0f3be84052ff6.svg",
+    "static/media/Overpass-ExtraBold.svg": "/Wellbeing-website/static/media/Overpass-ExtraBold.59b26bba73979cdd7b2a.svg",
+    "static/media/Overpass-Bold.svg": "/Wellbeing-website/static/media/Overpass-Bold.f416ee7f52b945a75196.svg",
     "static/media/LuckiestGuy-Regular.svg": "/Wellbeing-website/static/media/LuckiestGuy-Regular.f5378756c6ae50e9740b.svg",
     "static/media/Overpass-Medium.woff": "/Wellbeing-website/static/media/Overpass-Medium.2033ba7e03a9f9419c6c.woff",
     "static/media/Overpass-SemiBold.woff": "/Wellbeing-website/static/media/Overpass-SemiBold.37ca4c7762ae2147c819.woff",
@@ -36,12 +36,12 @@
     "static/media/LuckiestGuy-Regular.woff": "/Wellbeing-website/static/media/LuckiestGuy-Regular.1c53e60577b74ee697a4.woff",
     "static/media/LuckiestGuy-Regular.woff2": "/Wellbeing-website/static/media/LuckiestGuy-Regular.2e77873b13907b8bc87c.woff2",
     "index.html": "/Wellbeing-website/index.html",
-    "main.c8c30172.css.map": "/Wellbeing-website/static/css/main.c8c30172.css.map",
+    "main.fc5a56a2.css.map": "/Wellbeing-website/static/css/main.fc5a56a2.css.map",
     "main.92abdc9c.js.map": "/Wellbeing-website/static/js/main.92abdc9c.js.map",
     "787.c86c9a30.chunk.js.map": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8c30172.css",
+    "static/css/main.fc5a56a2.css",
     "static/js/main.92abdc9c.js"
   ]
 }
