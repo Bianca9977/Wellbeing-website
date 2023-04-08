@@ -1,0 +1,78 @@
+@import './variables.scss';
+@import './fonts.scss';
+
+.component-recommendations { 
+    height: 100vh;
+
+    .bg-container {
+        background: url('../images/background_options.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+        width: 36%; 
+        z-index: -1;
+       // transform: scale(1.6);
+        //animation-name: bg-change;
+        //animation-duration: 5s;
+        //width: 100vw;
+        //animation-fill-mode: forwards;  
+    }
+
+    @keyframes bg-change {
+        from {width: 100%; z-index: 2;}
+        to {width: 36%; z-index: -1; transform: scale(1);}
+      }
+
+    img {
+        max-width: 1000px;
+        position: absolute;
+        left: -300px;
+        top: -100px;
+        bottom: 0;
+    }
+
+    .container {
+        max-width: 80vw;
+        height: inherit;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .col-left {
+            width: 40%;
+        }
+        .col-right {
+            width: 60%;
+        }
+
+        .title-text {
+            font-size: 76px;
+            color: white;
+            font-family: 'Overpass', sans-serif;
+            position: relative;
+            z-index: 2;
+            text-align: start;
+            font-weight: 400;
+        }
+
+        h2 {
+            color: $color_primary;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 300;
+            text-align: start;
+            font-size: 40px;
+        }
+
+        .mood-text {
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .resources-container,
+        .activities-container {
+            display: flex;
+        }
+    }
+}
