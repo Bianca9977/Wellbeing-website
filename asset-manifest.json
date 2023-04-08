@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Wellbeing-website/static/css/main.3a4f23b2.css",
-    "main.js": "/Wellbeing-website/static/js/main.8e8f23d8.js",
+    "main.js": "/Wellbeing-website/static/js/main.54e62737.js",
     "static/js/787.c86c9a30.chunk.js": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js",
     "static/media/Overpass-Regular.svg": "/Wellbeing-website/static/media/Overpass-Regular.85572dfdc10dae902d36.svg",
     "static/media/Overpass-ExtraLight.svg": "/Wellbeing-website/static/media/Overpass-ExtraLight.be0dc4e47194b65753cf.svg",
@@ -38,11 +38,11 @@
     "static/media/LuckiestGuy-Regular.woff2": "/Wellbeing-website/static/media/LuckiestGuy-Regular.2e77873b13907b8bc87c.woff2",
     "index.html": "/Wellbeing-website/index.html",
     "main.3a4f23b2.css.map": "/Wellbeing-website/static/css/main.3a4f23b2.css.map",
-    "main.8e8f23d8.js.map": "/Wellbeing-website/static/js/main.8e8f23d8.js.map",
+    "main.54e62737.js.map": "/Wellbeing-website/static/js/main.54e62737.js.map",
     "787.c86c9a30.chunk.js.map": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a4f23b2.css",
-    "static/js/main.8e8f23d8.js"
+    "static/js/main.54e62737.js"
   ]
 }
