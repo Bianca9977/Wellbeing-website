@@ -10,6 +10,7 @@
         background-size: cover;
         height: 100%;
         position: absolute;
+        left: -80px;
         width: 36%; 
         z-index: -1;
        // transform: scale(1.6);
@@ -55,6 +56,10 @@
             z-index: 2;
             text-align: start;
             font-weight: 400;
+
+            &.explore-text {
+                font-size: 40px;
+            }
         }
 
         h2 {
@@ -62,7 +67,11 @@
             font-family: 'Overpass', sans-serif;
             font-weight: 300;
             text-align: start;
-            font-size: 40px;
+            font-size: 28px;
+
+            &.padding-top {
+                padding-top: 20px;
+            }
         }
 
         .mood-text {

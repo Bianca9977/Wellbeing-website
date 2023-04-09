@@ -4,8 +4,6 @@ import './styles/recommendations.scss';
 import ActivityCard from './components/ActivityCard';
 
 export default function MoodRecommendation() {
-    let params = useParams();
-    const mood = params.mood;
     
     const timeResources = [
         {
@@ -25,6 +23,10 @@ export default function MoodRecommendation() {
     const resources = [
         {
             text: `UNIVERSITY <br/> RESOURCES`,
+            route: '/'
+        },
+        {
+            text: `FOCUS <br/> MUSIC`,
             route: '/'
         }
     ]
@@ -55,7 +57,7 @@ export default function MoodRecommendation() {
         else if (hours >= 17 && hours <= 24)
             return timeResources[2];
       
-      }
+    }
 
     const recommendationsCards = recommendations.map((recommendation, index) => {
         return <ActivityCard key={index} name={recommendation.text} activityRoute={recommendation.route} />
@@ -70,7 +72,7 @@ export default function MoodRecommendation() {
             <div className='bg-container'></div>
             <div className='container'>
             <div className="col-left">
-                <h1 className='title-text'>If you feel <br/><span className='mood-text'>{mood}</span></h1>
+                <h1 className='title-text explore-text'>Explore all <br/> available resources <br/> and activities, not <br/> related to a <br/> particular mood</h1>
             </div>
             <div className="col-right">
                 <h2>...have a look at...</h2>
@@ -78,7 +80,7 @@ export default function MoodRecommendation() {
                     <ActivityCard name={getTime().text} activityRoute={getTime().route} />
                     { resourcesCards }
                 </div>
-                <h2 className="padding-top">...and try these activities tailored to your mood:</h2>
+                <h2 className="padding-top">...and try these activities:</h2>
                 <div className='activities-container'>
                     { recommendationsCards }
                 </div>

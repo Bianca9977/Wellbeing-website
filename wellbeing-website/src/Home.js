@@ -9,7 +9,12 @@ export default function Home() {
 
     const handleChange = (selectedOption) => {
         setMood(selectedOption);
-        navigate('/recommendation/' + selectedOption.slug);
+        if (selectedOption.slug != "explore") { 
+          navigate('/recommendation/' + selectedOption.slug);
+        }
+        else {
+          navigate('/explore');
+        }
         console.log(`Option selected:`, selectedOption.slug);
     };
 

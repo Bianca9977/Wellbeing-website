@@ -2,23 +2,27 @@
 @import './fonts.scss';
 
 .component-activity-card {
-    background-color: $color_primary;
+   // background-color: $color_primary;
+   background: linear-gradient(95.65deg, #90EE90 -107.47%, #5DAF8A -35.41%, #0F4C81 89.57%);
+
     color: white;
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
-    font-size: 32px;
-    height: 200px;
-    width: auto;
-    margin: 0 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    height: 160px;
+    width: 100%;
+    margin: 10px 30px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 16px;
     transition: all 1s;
-    min-width: 250px;
+    min-width: 120px;
 
     &:hover {
+        cursor: pointer;
         transition: all 1s;
         box-shadow: 0px 4px 50px 10px $color_orange;
     }

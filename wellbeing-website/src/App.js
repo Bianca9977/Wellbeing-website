@@ -7,6 +7,7 @@ import {
 import './App.scss';
 import Home from './Home';
 import MoodRecommendation from './MoodRecommendation';
+import ExplorePage from './ExplorePage';
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
             <Routes>
                 <Route path="/Wellbeing-website" element={<Home />} />
                 <Route path="/recommendation/:mood" element={<MoodRecommendation />} />
+                <Route path="/explore" element={<ExplorePage />} />
             </Routes>
           </div>
         </Router>
