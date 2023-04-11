@@ -1,0 +1,26 @@
+@import './variables.scss';
+@import './fonts.scss';
+
+.mindfulness-container {
+    height: 100vh;
+    background: $color_light;
+
+    .container {
+        max-width: 60vw;
+        height: inherit;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 64px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: $color_primary;
+            text-align: start;
+            font-family: 'Montserrat Medium', sans-serif;
+        }
+    }
+}

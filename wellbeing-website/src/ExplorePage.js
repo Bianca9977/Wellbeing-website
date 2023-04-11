@@ -3,46 +3,46 @@ import { Routes, Route, useParams } from "react-router-dom";
 import './styles/recommendations.scss';
 import ActivityCard from './components/ActivityCard';
 
-export default function MoodRecommendation() {
+export default function ExplorePage() {
     
     const timeResources = [
         {
             text: `MORNING <br/> BOOST`,
-            route: '/'
+            route: 'morning'
         },
         {
             text: `AFTERNOON <br/> BOOST`,
-            route: '/'
+            route: 'afternoon'
         },
         {
             text: `EVENING  <br/> BOOST`,
-            route: '/'
+            route: 'evening'
         }
     ]
 
     const resources = [
         {
             text: `UNIVERSITY <br/> RESOURCES`,
-            route: '/'
+            route: '/university-resources'
         },
         {
             text: `FOCUS <br/> MUSIC`,
-            route: '/'
+            route: '/focus-music'
         }
     ]
 
     const recommendations = [
         {
             text: 'MINDFULNESS',
-            route: '/'
+            route: '/mindfulness/explore',
         },
         {
             text: 'REFLECTION',
-            route: '/'
+            route: '/reflection/explore',
         },
         {
             text: 'PEER SUPPORT',
-            route: '/'
+            route: '/peer-support/explore',
         }
     ];
 
@@ -77,7 +77,7 @@ export default function MoodRecommendation() {
             <div className="col-right">
                 <h2>...have a look at...</h2>
                 <div className='resources-container'>
-                    <ActivityCard name={getTime().text} activityRoute={getTime().route} />
+                    <ActivityCard name={getTime().text} activityRoute={'/day-boost/' + getTime().route} />
                     { resourcesCards }
                 </div>
                 <h2 className="padding-top">...and try these activities:</h2>
