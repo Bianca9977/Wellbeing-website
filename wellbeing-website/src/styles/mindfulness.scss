@@ -2,8 +2,13 @@
 @import './fonts.scss';
 
 .mindfulness-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
-    background: $color_light;
+   // background: $color_light;
 
     .container {
         max-width: 60vw;
@@ -23,4 +28,62 @@
             font-family: 'Montserrat Medium', sans-serif;
         }
     }
+
+    //CAROUSEL STYLING
+
+    .seperator {
+        width: 100%;
+    }
+    
+    .controls-wrapper {
+        width: 100%;
+    }
+    
+    .carousel-wrapper {
+        width: 100%;
+    }
+
+    .rec-arrow {
+        background-color: transparent;
+        box-shadow: none;
+        color: $color_primary;
+
+        &:enabled { 
+            &:hover {
+                color: $color_orange !important;
+            }
+        }
+
+        &:enabled {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            color: $color_primary !important;
+        }
+
+        &:disabled {
+            color: $color_grey;
+            cursor: default;
+        }
+    }
+    
+    .rec-dot {
+        box-shadow: $color_primary 0px 0px 1px 2px;
+
+        &:hover {
+            box-shadow: $color_primary 0px 0px 1px 2px;
+            transform: scale(1.2);
+        }
+
+        &:focus {
+            box-shadow: $color_primary 0px 0px 1px 2px;
+        }
+
+        &_active {
+            background-color: $color_primary;
+            box-shadow: $color_primary 0px 0px 1px 2px;
+        }
+
+     
+    }
+
 }
