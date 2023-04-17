@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/Wellbeing-website/static/css/main.3a4f23b2.css",
-    "main.js": "/Wellbeing-website/static/js/main.54e62737.js",
+    "main.css": "/Wellbeing-website/static/css/main.1602424a.css",
+    "main.js": "/Wellbeing-website/static/js/main.5d4bc194.js",
     "static/js/787.c86c9a30.chunk.js": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js",
+    "static/media/Montserrat-Bold.svg": "/Wellbeing-website/static/media/Montserrat-Bold.4fd9621bfedf847f86e5.svg",
+    "static/media/Montserrat-Medium.svg": "/Wellbeing-website/static/media/Montserrat-Medium.2edaa07f1ac690232c76.svg",
+    "static/media/Montserrat-Regular.svg": "/Wellbeing-website/static/media/Montserrat-Regular.0862c5facfeba4f088ae.svg",
+    "static/media/Montserrat-Thin.svg": "/Wellbeing-website/static/media/Montserrat-Thin.21b89f93cd4e4feac098.svg",
     "static/media/Overpass-Regular.svg": "/Wellbeing-website/static/media/Overpass-Regular.85572dfdc10dae902d36.svg",
     "static/media/Overpass-ExtraLight.svg": "/Wellbeing-website/static/media/Overpass-ExtraLight.be0dc4e47194b65753cf.svg",
     "static/media/Overpass-Black.svg": "/Wellbeing-website/static/media/Overpass-Black.f9f037eea31aa99b2c15.svg",
@@ -14,6 +18,18 @@
     "static/media/Overpass-Bold.svg": "/Wellbeing-website/static/media/Overpass-Bold.f416ee7f52b945a75196.svg",
     "static/media/LuckiestGuy-Regular.svg": "/Wellbeing-website/static/media/LuckiestGuy-Regular.f5378756c6ae50e9740b.svg",
     "static/media/background_options.png": "/Wellbeing-website/static/media/background_options.37ab6fdc44abf17c6532.png",
+    "static/media/Montserrat-Thin.eot": "/Wellbeing-website/static/media/Montserrat-Thin.8a8c867ee88efff1b96b.eot",
+    "static/media/Montserrat-Thin.ttf": "/Wellbeing-website/static/media/Montserrat-Thin.106be09a11e342660aad.ttf",
+    "static/media/Montserrat-Medium.eot": "/Wellbeing-website/static/media/Montserrat-Medium.5dcd3247f6824c2758d8.eot",
+    "static/media/Montserrat-Bold.eot": "/Wellbeing-website/static/media/Montserrat-Bold.c2c5dc54b736e37b408c.eot",
+    "static/media/Montserrat-Regular.eot": "/Wellbeing-website/static/media/Montserrat-Regular.66eda0b7eb59b754aa6d.eot",
+    "static/media/Montserrat-Medium.ttf": "/Wellbeing-website/static/media/Montserrat-Medium.b3302f2f794dd3491eed.ttf",
+    "static/media/Montserrat-Bold.ttf": "/Wellbeing-website/static/media/Montserrat-Bold.adcddc521108cd709ba5.ttf",
+    "static/media/Montserrat-Regular.ttf": "/Wellbeing-website/static/media/Montserrat-Regular.1df6dbd2b3efe7e8bbd5.ttf",
+    "static/media/Montserrat-Bold.woff": "/Wellbeing-website/static/media/Montserrat-Bold.3155f256200b7d559607.woff",
+    "static/media/Montserrat-Medium.woff": "/Wellbeing-website/static/media/Montserrat-Medium.2451e96bc4c62e5ad1d0.woff",
+    "static/media/Montserrat-Regular.woff": "/Wellbeing-website/static/media/Montserrat-Regular.4a3d63613a362f90a9e6.woff",
+    "static/media/Montserrat-Thin.woff": "/Wellbeing-website/static/media/Montserrat-Thin.d27ca3cc852da1ea6803.woff",
     "static/media/Overpass-Medium.woff": "/Wellbeing-website/static/media/Overpass-Medium.2033ba7e03a9f9419c6c.woff",
     "static/media/Overpass-SemiBold.woff": "/Wellbeing-website/static/media/Overpass-SemiBold.37ca4c7762ae2147c819.woff",
     "static/media/Overpass-Bold.woff": "/Wellbeing-website/static/media/Overpass-Bold.4e77f183166e78e659a2.woff",
@@ -23,6 +39,10 @@
     "static/media/Overpass-Black.woff": "/Wellbeing-website/static/media/Overpass-Black.cdcf7393ba021e94c95b.woff",
     "static/media/Overpass-Regular.woff": "/Wellbeing-website/static/media/Overpass-Regular.0fcdd29e612449ef2bd3.woff",
     "static/media/Overpass-Thin.woff": "/Wellbeing-website/static/media/Overpass-Thin.996c777f1ce51f93519c.woff",
+    "static/media/Montserrat-Bold.woff2": "/Wellbeing-website/static/media/Montserrat-Bold.d28745f2b8e5c12d3607.woff2",
+    "static/media/Montserrat-Medium.woff2": "/Wellbeing-website/static/media/Montserrat-Medium.cf734a3745838e63cc2a.woff2",
+    "static/media/Montserrat-Regular.woff2": "/Wellbeing-website/static/media/Montserrat-Regular.4ada7f2f580c676690f0.woff2",
+    "static/media/Montserrat-Thin.woff2": "/Wellbeing-website/static/media/Montserrat-Thin.c8313bad66bf2cf4f9e6.woff2",
     "static/media/LuckiestGuy-Regular.eot": "/Wellbeing-website/static/media/LuckiestGuy-Regular.37230cc6efaff316cf32.eot",
     "static/media/LuckiestGuy-Regular.ttf": "/Wellbeing-website/static/media/LuckiestGuy-Regular.3b56aecee64ba563a812.ttf",
     "static/media/Overpass-SemiBold.woff2": "/Wellbeing-website/static/media/Overpass-SemiBold.0bfa3fb2ac4252b81863.woff2",
@@ -37,12 +57,12 @@
     "static/media/LuckiestGuy-Regular.woff": "/Wellbeing-website/static/media/LuckiestGuy-Regular.1c53e60577b74ee697a4.woff",
     "static/media/LuckiestGuy-Regular.woff2": "/Wellbeing-website/static/media/LuckiestGuy-Regular.2e77873b13907b8bc87c.woff2",
     "index.html": "/Wellbeing-website/index.html",
-    "main.3a4f23b2.css.map": "/Wellbeing-website/static/css/main.3a4f23b2.css.map",
-    "main.54e62737.js.map": "/Wellbeing-website/static/js/main.54e62737.js.map",
+    "main.1602424a.css.map": "/Wellbeing-website/static/css/main.1602424a.css.map",
+    "main.5d4bc194.js.map": "/Wellbeing-website/static/js/main.5d4bc194.js.map",
     "787.c86c9a30.chunk.js.map": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a4f23b2.css",
-    "static/js/main.54e62737.js"
+    "static/css/main.1602424a.css",
+    "static/js/main.5d4bc194.js"
   ]
 }
