@@ -2,19 +2,23 @@
 @import './fonts.scss';
 
 .component-item {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 250px;
   width: 100%;
-  background-color: $color_primary;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 16px;
   color: #fff;
   margin: 35px;
   font-size: 4em;
+  transition: all 1s;
 
   &:hover {
     cursor: pointer;
     transition: all 1s;
+    border-color: $color_orange;
     box-shadow: 0px 4px 30px 10px $color_orange;
-    }
+  }
 }

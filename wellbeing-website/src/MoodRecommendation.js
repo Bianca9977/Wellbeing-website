@@ -70,7 +70,7 @@ export default function MoodRecommendation() {
 
     return (
         <div className="component-recommendations">
-            <div className='bg-container'></div>
+            {/* <div className='bg-container'></div> */}
             <div className='container'>
             <div className="col-left">
                 <h1 className='title-text'>If you feel <br/><span className='mood-text'>{mood}</span></h1>

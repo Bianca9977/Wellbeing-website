@@ -2,8 +2,8 @@
 @import './fonts.scss';
 
 .component-activity-card {
-   // background-color: $color_primary;
-   background: linear-gradient(95.65deg, #90EE90 -107.47%, #5DAF8A -35.41%, #0F4C81 89.57%);
+    background-color: transparent;
+   //background: linear-gradient(95.65deg, #90EE90 -107.47%, #5DAF8A -35.41%, #0F4C81 89.57%);
 
     color: white;
     font-family: 'Overpass', sans-serif;
@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    border: 2px solid $color_outline;
     border-radius: 16px;
     transition: all 1s;
     min-width: 120px;
@@ -24,6 +25,7 @@
     &:hover {
         cursor: pointer;
         transition: all 1s;
-        box-shadow: 0px 4px 50px 10px $color_orange;
+        border-color: $color_orange;
+        box-shadow: 0px 4px 50px 0px $color_orange;
     }
 }

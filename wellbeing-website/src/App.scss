@@ -58,16 +58,34 @@ body {
       margin: 50px 0 20px 0;
     }
 
+    .react-select {
+      &__option {
+        padding: 12px 0;
+        color: $color_text;
+        font-family: 'Montserrat Medium', sans-serif;
+        cursor: pointer;
+
+        &--is-focused {
+          background-color: #FFD599;
+        }
+
+        &:not(:last-child) {
+          //border-bottom: 1px solid $color_text;
+        }
+      }
+    }
+
     .react-select__control {
       max-width: 370px;
       background-color: white;
       height: 60px;
-      border-radius: 10px;
+      border-radius: 10px 10px 0 0;
       font-size: 24px;
-      text-align: center;
+      //text-align: center;
       font-family: 'Overpass', sans-serif;
       font-weight: 500;
       cursor: pointer;
+
     }
     
     .react-select__menu {
@@ -76,6 +94,11 @@ body {
       text-align: center;
       font-family: 'Overpass', sans-serif;
       font-weight: 500;
+      
+      &-list {
+        padding: 0;
+        border-radius: 0 0 10px 10px;
+      }
     }
 
     .react-select__indicator-separator {

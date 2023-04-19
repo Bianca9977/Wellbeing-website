@@ -2,12 +2,13 @@
 @import './fonts.scss';
 
 .explore-button {
-    background: linear-gradient(90deg, #5CAD8A 10%, #0F4C81 90%);
+    //background: linear-gradient(90deg, #5CAD8A 10%, #0F4C81 90%);
     //box-shadow: 0px 4px 30px 0px #0F4C8180;
+    background-color: transparent;
     width: 330px;
     height: 70px;
     border-radius: 30px;
-    border: none;
+    border: 2px solid white;
     color: white;
     font-size: 24px;
     cursor: pointer;
@@ -17,11 +18,12 @@
     margin: auto;
     left: 0;
     right: 0;
-    bottom: 10%;
+    bottom: 6%;
     transition: all 1s;
 
     &:hover {
         transition: all 1s;
+        border-color: $color_orange;
         box-shadow: 0px 4px 30px 0px $color_orange;
     }
 }

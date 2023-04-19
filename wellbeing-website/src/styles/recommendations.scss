@@ -3,6 +3,7 @@
 
 .component-recommendations { 
     height: 100vh;
+    background: linear-gradient(269.68deg, #105189 22.28%, #44886B 80.59%, #FFB347 107.67%);
 
     .bg-container {
         background: url('../images/background_options.png');
@@ -63,7 +64,7 @@
         }
 
         h2 {
-            color: $color_primary;
+            color: white;
             font-family: 'Overpass', sans-serif;
             font-weight: 300;
             text-align: start;
