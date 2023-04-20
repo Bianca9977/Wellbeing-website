@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './fonts.scss';
+@import './common.scss';
 
 .reflection-container {
     position: absolute;
@@ -34,6 +35,7 @@
             align-items: center;
             
             fieldset {
+                width: 80%;
                 border: 2px solid white;
                 border-radius: 16px;
                 text-align: start;
@@ -46,7 +48,6 @@
 
             textarea {
                 width: 100%;
-                max-width: 500px;
                 outline: none;
                 border: none;
                 background-color: transparent;
@@ -54,5 +55,26 @@
                 resize: none; 
             }
         }
+
+        .save-button {
+            margin-top: 30px;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 2px solid white;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Overpass', sans-serif;
+            letter-spacing: 1px;
+            padding: 10px 16px;
+            margin-right: 10px;
+            align-self: flex-end;
+        }
+    }
+    .react-tooltip {
+        background-color: $color_primary;
+        color: white;
+        font-family: 'Montserrat Medium', sans-serif;
+        border-radius: 4px;
     }
 }
