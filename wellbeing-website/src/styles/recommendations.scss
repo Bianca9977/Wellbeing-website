@@ -59,7 +59,13 @@
             font-weight: 400;
 
             &.explore-text {
-                font-size: 40px;
+                font-size: 36px;
+
+                span {
+                    font-weight: 800;
+                    font-style: italic;
+                    cursor: pointer;
+                }
             }
         }
 

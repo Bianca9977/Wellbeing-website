@@ -10,22 +10,22 @@ export default function MoodRecommendation() {
     const timeResources = [
         {
             text: `MORNING <br/> BOOST`,
-            route: 'morning',
+            route: mood + '/morning',
         },
         {
             text: `AFTERNOON <br/> BOOST`,
-            route: 'afternoon',
+            route: mood + '/afternoon',
         },
         {
             text: `EVENING  <br/> BOOST`,
-            route: 'evening',
+            route: mood + '/evening',
         }
     ]
 
     const resources = [
         {
             text: `UNIVERSITY <br/> RESOURCES`,
-            route: '/university-resources'
+            route: '/university-resources/' + mood
         }
     ]
 

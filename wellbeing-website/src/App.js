@@ -26,8 +26,8 @@ export default function App() {
                 <Route path="/mindfulness/:mood" element={<Mindfulness />} />
                 <Route path="/reflection/:mood" element={<Reflection />} />
                 <Route path="/peer-support/:mood" element={<PeerSupport />} />
-                <Route path="/university-resources" element={<UniversityResources />} />
-                <Route path="/day-boost/:time" element={<DayBoost />} />
+                <Route path="/university-resources/:mood" element={<UniversityResources />} />
+                <Route path="/day-boost/:mood/:time" element={<DayBoost />} />
             </Routes>
           </div>
         </Router>

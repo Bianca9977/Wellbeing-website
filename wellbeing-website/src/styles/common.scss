@@ -28,6 +28,46 @@
     }
 }
 
+.back-button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 1px;
+    padding: 0;
+    transition: all 1s;
+
+    span {
+        padding-top: 2px;
+    }
+
+    svg {
+        path {
+            transition: all 1s;
+            fill: white;
+        }
+    }
+    
+    &:hover {
+        transition: all 1s;
+        color: $color_orange;
+
+        svg {
+            path {
+                transition: all 1s;
+                fill: $color_orange;
+            }
+        }
+    }
+}
+
 //CAROUSEL STYLING
 
 .seperator {

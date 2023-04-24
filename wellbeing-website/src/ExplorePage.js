@@ -1,29 +1,31 @@
 import React from 'react';
-import { Routes, Route, useParams } from "react-router-dom";
 import './styles/recommendations.scss';
 import ActivityCard from './components/ActivityCard';
+import { useNavigate } from "react-router-dom";
 
 export default function ExplorePage() {
+
+    let navigate = useNavigate();
     
     const timeResources = [
         {
             text: `MORNING <br/> BOOST`,
-            route: 'morning'
+            route: 'explore/morning'
         },
         {
             text: `AFTERNOON <br/> BOOST`,
-            route: 'afternoon'
+            route: 'explore/afternoon'
         },
         {
             text: `EVENING  <br/> BOOST`,
-            route: 'evening'
+            route: 'explore/evening'
         }
     ]
 
     const resources = [
         {
             text: `UNIVERSITY <br/> RESOURCES`,
-            route: '/university-resources'
+            route: '/university-resources/explore' 
         },
         {
             text: `FOCUS <br/> MUSIC`,
@@ -67,12 +69,20 @@ export default function ExplorePage() {
         return <ActivityCard key={index} name={resource.text} activityRoute={resource.route} />
     })
 
+    function goToHomepage() {
+        navigate('/Wellbeing-website');
+    }
+
     return (
         <div className="component-recommendations">
             <div className='bg-container'></div>
             <div className='container'>
             <div className="col-left">
-                <h1 className='title-text explore-text'>Explore all <br/> available resources <br/> and activities, not <br/> related to a <br/> particular mood</h1>
+                <h1 className='title-text explore-text'>Explore all <br/> available resources <br/> and activities, not <br/> related to a <br/> particular mood
+                <br/>
+                <br/>
+                Or input your mood <span onClick={goToHomepage}>here</span>
+                </h1>
             </div>
             <div className="col-right">
                 <h2>...have a look at...</h2>
