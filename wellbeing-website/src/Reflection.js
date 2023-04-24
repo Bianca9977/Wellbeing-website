@@ -90,7 +90,7 @@ export default function Reflection() {
     return (
         <div className="reflection-container">
           <div className='container'>
-                <h1>Self-reflction for <br/> Personal Growth</h1>
+                <h1>Self-reflection for <br/> Personal Growth</h1>
                 <div>
                     <h2>Why self-reflection?</h2>
                 </div>

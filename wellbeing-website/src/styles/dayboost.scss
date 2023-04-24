@@ -1,0 +1,70 @@
+@import './variables.scss';
+@import './fonts.scss';
+@import './common.scss';
+
+.dayboost-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: linear-gradient(179.14deg, #0F4C81 3.38%, #5CAD8A 63.08%, #FFB347 131.35%);
+
+    .container {
+        max-width: 60vw;
+        height: inherit;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+
+        .resources-container { 
+            display: flex;
+            flex-direction: row;
+            margin-top: 10rem;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .resource {
+                background-color: transparent;
+                color: white;
+                font-family: "Overpass", sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: 2px;
+                height: 200px;
+                margin: 10px 30px 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                border: 2px solid white;
+                border-radius: 16px;
+                transition: all 1s;
+                min-width: 120px;
+                width: 50%;
+                max-width: 540px;
+                cursor: pointer;
+
+                p {
+                    span {
+                        font-family: 'Montserrat Thin', sans-serif;
+                        font-size: 14px;
+                    }
+                }
+
+                &:hover {
+                    transition: all 1s;
+                    border-color: $color_orange;
+                    box-shadow: 0px 4px 30px 0px $color_orange;
+                }
+            }
+        }      
+    }
+}
