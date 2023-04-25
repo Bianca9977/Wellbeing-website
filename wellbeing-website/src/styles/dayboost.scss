@@ -3,23 +3,36 @@
 @import './common.scss';
 
 .dayboost-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
     background: linear-gradient(179.14deg, #0F4C81 3.38%, #5CAD8A 63.08%, #FFB347 131.35%);
+    min-height: 100vh;
+
+    @media (max-width: 768px) {
+        height: 100%;
+        overflow: auto;
+    }
+
+    @media (min-width: 769px) {
+        overflow: auto;
+    }
 
     .container {
         max-width: 60vw;
         height: inherit;
         margin: 0 auto;
 
+        @media (max-width: 768px) {
+            margin-top: 80px;
+            max-width: 80vw;
+        }
+
         h1 {
             font-size: 48px;
             font-family: 'Montserrat', sans-serif;
             color: white;
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+            }
         }
 
         .resources-container { 
@@ -29,6 +42,9 @@
 
             @media (max-width: 768px) {
                 flex-direction: column;
+                margin-top: 1rem;
+                justify-content: center;
+                align-items: center;
             }
 
             .resource {
@@ -63,6 +79,15 @@
                     transition: all 1s;
                     border-color: $color_orange;
                     box-shadow: 0px 4px 30px 0px $color_orange;
+                }
+
+                @media (max-width: 768px) {
+                    margin: 10px 0 0 0;
+                    width: 70%;
+
+                    &:not(:first-child) {
+                        margin: 30px 0 0 0;
+                    }
                 }
             }
         }      

@@ -3,25 +3,36 @@
 @import './common.scss';
 
 .mindfulness-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-   // background: $color_light;
-   //background: linear-gradient(269.66deg, #0F4C81 -13.53%, #5CAD8A 39.95%, #FFB347 119.05%);
-   background: linear-gradient(179.14deg, #0F4C81 3.38%, #5CAD8A 63.08%, #FFB347 131.35%);
+    background: linear-gradient(179.14deg, #0F4C81 3.38%, #5CAD8A 63.08%, #FFB347 131.35%);
+    min-height: 100vh;
 
+    @media (max-width: 768px) {
+        height: 100%;
+        overflow: auto;
+    }
+
+    @media (min-width: 769px) {
+        overflow: auto;
+    }
+    
     .container {
         max-width: 60vw;
         height: inherit;
         margin: 0 auto;
 
+        @media (max-width: 768px) {
+            margin-top: 80px;
+            max-width: 80vw;
+        }
+
         h1 {
             font-size: 48px;
             font-family: 'Montserrat', sans-serif;
             color: white;
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+            }
         }
 
         h2 {
@@ -34,6 +45,10 @@
                 font-style: italic;
                 font-weight: 800;
                 padding-right: 6px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 18px;
             }
         }
     }

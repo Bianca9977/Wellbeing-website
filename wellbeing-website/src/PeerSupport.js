@@ -142,6 +142,7 @@ export default function PeerSupport() {
               <h1>Peer support for <br/> community wellbeing</h1>
               <div>
                   <h2>How does it work?</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className='chats-container'>
                 {(mood !== 'explore') && <h2>Recommended Chats</h2>}
@@ -171,6 +172,7 @@ export default function PeerSupport() {
                     })}
                 </div>
               </div>
+              <div>
 
               {(mood !== 'explore') ?  (<button className='explore-button' onClick={goToExplore}>
                   GO TO EXPLORE
@@ -179,6 +181,7 @@ export default function PeerSupport() {
                   INPUT MOOD
                 </button>
               )}
+              </div>
           </div>
         </div>
       );

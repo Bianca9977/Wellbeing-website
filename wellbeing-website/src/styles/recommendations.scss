@@ -5,6 +5,10 @@
     height: 100vh;
     background: linear-gradient(269.68deg, #105189 22.28%, #44886B 80.59%, #FFB347 107.67%);
 
+    @media (max-width: 768px) {
+        height: 100%;
+    }
+
     .bg-container {
         background: url('../images/background_options.png');
         background-repeat: no-repeat;
@@ -42,11 +46,23 @@
         flex-direction: row;
         align-items: center;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
         .col-left {
             width: 40%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
         .col-right {
             width: 60%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
 
         .title-text {
@@ -62,10 +78,40 @@
                 font-size: 36px;
 
                 span {
-                    font-weight: 800;
+                    //font-weight: 800;
                     font-style: italic;
                     cursor: pointer;
+                    padding: 0 2px;
+                    text-decoration: underline;
+
+                    /* background: linear-gradient(
+                        to right,
+                        #fff 20%,
+                        $color_orange 80%
+                    );
+
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-fill-color: transparent;
+                    background-size: 500% auto;
+                    animation: textShine 8s ease-in-out infinite alternate; */
                 }
+
+                @keyframes textShine {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    100% {
+                        background-position: 100% 50%;
+                    }
+                }
+            }
+
+            @media (max-width: 768px) {
+                font-size: 64px;
+                line-height: 1;
+                margin-top: 4rem;
             }
         }
 
@@ -84,11 +130,16 @@
         .mood-text {
             font-style: italic;
             font-weight: 600;
+            padding: 0 6px;
         }
 
         .resources-container,
         .activities-container {
             display: flex;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
         }
     }
 }
