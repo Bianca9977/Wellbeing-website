@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Wellbeing-website/static/css/main.0c7b570c.css",
-    "main.js": "/Wellbeing-website/static/js/main.42e9f276.js",
+    "main.js": "/Wellbeing-website/static/js/main.f0e41184.js",
     "static/js/787.c86c9a30.chunk.js": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js",
     "static/media/Montserrat-Bold.svg": "/Wellbeing-website/static/media/Montserrat-Bold.4fd9621bfedf847f86e5.svg",
     "static/media/Montserrat-Medium.svg": "/Wellbeing-website/static/media/Montserrat-Medium.2edaa07f1ac690232c76.svg",
@@ -58,11 +58,11 @@
     "static/media/LuckiestGuy-Regular.woff2": "/Wellbeing-website/static/media/LuckiestGuy-Regular.2e77873b13907b8bc87c.woff2",
     "index.html": "/Wellbeing-website/index.html",
     "main.0c7b570c.css.map": "/Wellbeing-website/static/css/main.0c7b570c.css.map",
-    "main.42e9f276.js.map": "/Wellbeing-website/static/js/main.42e9f276.js.map",
+    "main.f0e41184.js.map": "/Wellbeing-website/static/js/main.f0e41184.js.map",
     "787.c86c9a30.chunk.js.map": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c7b570c.css",
-    "static/js/main.42e9f276.js"
+    "static/js/main.f0e41184.js"
   ]
 }
