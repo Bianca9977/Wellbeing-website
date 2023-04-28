@@ -85,7 +85,7 @@ export default function ExplorePage() {
                 </h1>
             </div>
             <div className="col-right">
-                <h2>...have a look at...</h2>
+                <h2>Check these resources...</h2>
                 <div className='resources-container'>
                     <ActivityCard name={getTime().text} activityRoute={'/day-boost/' + getTime().route} />
                     { resourcesCards }

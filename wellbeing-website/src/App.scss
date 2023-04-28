@@ -1,8 +1,30 @@
 @import 'styles/variables.scss';
 @import 'styles/fonts.scss';
 
-body {
 
+
+@media only screen and (min-width: 769px) {
+  body[data-aos-delay='4000'] [data-aos],
+  [data-aos][data-aos][data-aos-delay='4000'] {
+    transition-delay: 4000ms;
+  }
+
+  body[data-aos-delay='5000'] [data-aos],
+  [data-aos][data-aos][data-aos-delay='5000'] {
+    transition-delay: 5000ms;
+  }
+
+  body[data-aos-delay='6000'] [data-aos],
+  [data-aos][data-aos][data-aos-delay='6000'] {
+    transition-delay: 6000ms;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body[data-aos-delay='3000'] [data-aos],
+  [data-aos][data-aos][data-aos-delay='3000'] {
+    transition-delay: 1000ms !important;
+  }
 
 }
 
@@ -53,6 +75,9 @@ body {
       font-weight: 200;
       margin: 0;
       letter-spacing: 6px;
+      animation: fadeInAnimation ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
 
       @media (max-width: 768px) {
         font-size: 48px;
@@ -67,6 +92,11 @@ body {
       font-weight: 400;
       color: white;
       margin: 50px 0 20px 0;
+      opacity: 0;
+      animation: fadeInAnimation ease 1s;
+      animation-delay: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
 
       @media (max-width: 768px) {
         font-size: 22px;
@@ -74,6 +104,15 @@ body {
     }
 
     .react-select {
+
+      &__control {
+        opacity: 0;
+        animation: fadeInAnimation ease 2s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
       &__option {
         padding: 12px 0;
         color: $color_text;
@@ -151,6 +190,15 @@ body {
       }
     }
   }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
 

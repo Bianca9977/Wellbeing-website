@@ -84,17 +84,29 @@ export default function MoodRecommendation() {
                 </svg>
                 <span>Back</span>
             </button>
-            <div className="col-left">
+            <div className="col-left" data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="1000">
                 <h1 className='title-text'>If you feel <br/><span className='mood-text'>{mood}</span></h1>
             </div>
-            <div className="col-right">
-                <h2>...have a look at...</h2>
-                <div className='resources-container'>
+            <div className="col-right" data-aos="fade-up"
+                data-aos-delay="2000"
+                data-aos-duration="1000">
+                <h2 data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000">...have a look at...</h2>
+                <div data-aos="fade-up"
+                data-aos-delay="3000"
+                data-aos-duration="1000" className='resources-container'>
                     <ActivityCard name={getTime().text} activityRoute={'/day-boost/' + getTime().route} />
                     { resourcesCards }
                 </div>
-                <h2 className="padding-top">...and try these activities tailored to your mood:</h2>
-                <div className='activities-container'>
+                <h2 className="padding-top" data-aos="fade-up"
+                data-aos-delay="4000"
+                data-aos-duration="1000">...and try these activities tailored to your mood:</h2>
+                <div className='activities-container' data-aos="fade-up"
+                data-aos-delay="5000"
+                data-aos-duration="1000">
                     { recommendationsCards }
                 </div>
             </div>

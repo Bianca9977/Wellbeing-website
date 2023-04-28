@@ -15,11 +15,13 @@
   font-size: 4em;
   transition: all 1s;
 
-  &:hover {
-    cursor: pointer;
-    transition: all 1s;
-    border-color: $color_orange;
-    box-shadow: 0px 4px 30px 10px $color_orange;
+  @media (min-width: 768px) {
+    &:hover {
+      cursor: pointer;
+      transition: all 1s;
+      border-color: $color_orange;
+      box-shadow: 0px 4px 30px 10px $color_orange;
+    }
   }
 
   @media (max-width: 768px) {

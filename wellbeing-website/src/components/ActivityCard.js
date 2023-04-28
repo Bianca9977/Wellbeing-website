@@ -11,7 +11,7 @@ export default function ActivityCard(props) {
   }
 
   return (
-      <div className="component-activity-card" onClick={goToRoute}>
+      <div className="component-activity-card" onClick={goToRoute} >
         <span dangerouslySetInnerHTML={{ __html: props.name }}></span> 
       </div>
     );
