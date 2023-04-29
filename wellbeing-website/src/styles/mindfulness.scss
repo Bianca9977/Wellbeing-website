@@ -18,28 +18,31 @@
     .container {
         max-width: 60vw;
         height: inherit;
-        margin: 0 auto;
+        margin: 30px auto 0;
 
         @media (max-width: 768px) {
-            margin-top: 80px;
+            margin-top: 60px;
             max-width: 70vw;
         }
 
         h1 {
-            font-size: 48px;
-            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-family: 'LuckiestGuy', sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
             color: white;
 
             @media (max-width: 768px) {
-                font-size: 28px;
+                font-size: 32px;
             }
         }
 
         h2 {
-            font-size: 26px;
+            font-size: 22px;
             color: white;
             text-align: start;
             font-family: 'Montserrat', sans-serif;
+
 
             .mood-text {
                 font-style: italic;

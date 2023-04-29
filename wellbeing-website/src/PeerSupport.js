@@ -135,11 +135,11 @@ export default function PeerSupport() {
           <div className='container'>
               <h1>Peer support for <br/> community wellbeing</h1>
               <div>
-                  <h2>How does it work?</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <h2 className='margin-top'>How does it work?</h2>
+                  <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className='chats-container'>
-                {(mood !== 'explore') && <h2>Recommended Chats</h2>}
+                {(mood !== 'explore') && <h2 className='margin-top'>Recommended chat if you feel <span className='mood-text'>{mood}</span>:</h2>}
                 <div className='recommended-chats'>
                   {getMoodArray().map((item, index) => { 
                   return  item.recommended &&
@@ -151,9 +151,9 @@ export default function PeerSupport() {
                     })}
                 </div>
                 {(mood !== 'explore') ? (
-                  <h3>Other chats:</h3>
+                  <h3 className='margin-top'>Other chats:</h3>
                 ) : (
-                  <h3>All available chats:</h3>
+                  <h3 className='margin-top'>All available chats:</h3>
                 )}
                 <div className='other-chats'>
                   {getMoodArray().map((item, index) => { 

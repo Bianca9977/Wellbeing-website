@@ -71,7 +71,7 @@ export default function DayBoost() {
             <Header />
             <BackButton />
             <div className='container'>
-              <h1>Resources for a <br/> smooth { time }</h1>
+              <h1>Resources for <br/> a smooth { time }</h1>
               <div className="resources-container">
                   {getTimeArray().map((item, index) => 
                     <div className='resource' key={index}>

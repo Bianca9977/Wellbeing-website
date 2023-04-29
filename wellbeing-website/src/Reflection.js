@@ -102,7 +102,11 @@ export default function Reflection() {
               <div>
                   <h2>Why self-reflection?</h2>
               </div>
-
+              {(mood !== 'explore') ?  (
+                <h2>Reflect on these questions when you are feeling <span className='mood-text'>{mood}</span>:</h2>)
+                : (
+                <h2>Reflect on these questions to gain a better understanding of your feelings:</h2>
+              )}
               <div className="text-area-container">
                   <Carousel breakPoints={breakPoints}>
                       {items.map((item, index) => (

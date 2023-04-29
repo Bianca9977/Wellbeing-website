@@ -5,12 +5,12 @@
     //background: linear-gradient(90deg, #5CAD8A 10%, #0F4C81 90%);
     //box-shadow: 0px 4px 30px 0px #0F4C8180;
     background-color: transparent;
-    width: 330px;
-    height: 70px;
+    width: 300px;
+    height: 60px;
     border-radius: 30px;
     border: 2px solid white;
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
     font-family: 'Overpass', sans-serif;
     letter-spacing: 1px;
@@ -18,7 +18,7 @@
     margin: auto;
     left: 0;
     right: 0;
-    bottom: 6%;
+    bottom: 5%;
     transition: all 1s;
 
     &:hover {
@@ -181,10 +181,18 @@ h3 {
     color: white;
     text-align: start;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400 !important;
 }
 
 h2 {
+    font-weight: 400 !important;
+
     @media (max-width: 768px) {
         font-size: 20px !important;
     }
+}
+
+p {
+    color: white;
+    font-size: 16px;
 }

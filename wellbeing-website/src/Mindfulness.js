@@ -74,8 +74,11 @@ export default function Mindfulness() {
                     <h2>Why mindfulness?</h2>
                 </div>
                 <div>
-                    
-                    <h2>Check these meditation sessions for when you are feeling <span className='mood-text'>{mood}</span>:</h2>
+                    {(mood !== 'explore') ?  (
+                    <h2>Check these meditation sessions for when you are feeling <span className='mood-text'>{mood}</span>:</h2>)
+                    : (
+                    <h2>Explore these meditation sessions:</h2>
+                    )}
                     <Carousel breakPoints={breakPoints}>
                         {items.map((item) => (
                             <Item key={item.id} item={item}></Item>
