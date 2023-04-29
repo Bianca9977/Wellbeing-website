@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import './App.scss';
 import { useNavigate } from "react-router-dom";
+import Header from './components/Header';
 
 export default function Home() {
     let navigate = useNavigate();
@@ -63,6 +64,7 @@ export default function Home() {
 
     return (
       <div className="component-app">
+        <Header />
         <div className='container'>
           <h1>{ greeting() }</h1>
           <h2>Input your mood and <br/> explore suggested activities</h2>

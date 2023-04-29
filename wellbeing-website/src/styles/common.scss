@@ -46,7 +46,7 @@
     align-items: center;
     position: absolute;
     left: 50px;
-    top: 30px;
+    top: calc(50% - 15px); 
     border: none;
     color: white;
     font-size: 18px;
@@ -68,7 +68,7 @@
         }
     }
     
-    &:hover {
+/*     &:hover {
         transition: all 1s;
         color: $color_orange;
 
@@ -78,10 +78,37 @@
                 fill: $color_orange;
             }
         }
+    } */
+
+    @media (max-width: 768px) {
+        top: 40px;
+        justify-content: end;
+        right: 60px;
+        left: 0;
+    }
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    .home-button {
+        font-family: 'Futura Bold';
+        font-size: 36px;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: white;
+        padding-left: 60px;
     }
 
     @media (max-width: 768px) {
-        left: 20px;
+        position: relative;
     }
 }
 

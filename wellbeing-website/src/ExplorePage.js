@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/recommendations.scss';
 import ActivityCard from './components/ActivityCard';
 import { useNavigate } from "react-router-dom";
+import Header from './components/Header';
+import BackButton from './components/BackButton';
 
 export default function ExplorePage() {
 
@@ -70,12 +72,13 @@ export default function ExplorePage() {
     })
 
     function goToHomepage() {
-        navigate('/Wellbeing-website');
+        navigate('/');
     }
 
     return (
         <div className="component-recommendations">
-            <div className='bg-container'></div>
+            <Header />
+            <BackButton />
             <div className='container'>
             <div className="col-left">
                 <h1 className='title-text explore-text'>Explore all <br/> available resources <br/> and activities, not <br/> related to a <br/> particular mood

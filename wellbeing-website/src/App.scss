@@ -75,7 +75,9 @@
       font-weight: 200;
       margin: 0;
       letter-spacing: 6px;
+      opacity: 0;
       animation: fadeInAnimation ease 1s;
+      animation-delay: 1s;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
 
@@ -108,7 +110,7 @@
       &__control {
         opacity: 0;
         animation: fadeInAnimation ease 2s;
-        animation-delay: 2s;
+        animation-delay: 3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
       }
