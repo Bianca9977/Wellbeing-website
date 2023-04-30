@@ -19,11 +19,13 @@ export default function DayBoost() {
 
     const openModal = (link) => {
       setLink(link);
+      document.body.style.overflow = 'hidden';
       setIsToggled(!isToggled);
     }
 
     const closeModal = () => {
       setLink('');
+      document.body.style.overflow = 'auto';
       setIsToggled(!isToggled);
     }
 
