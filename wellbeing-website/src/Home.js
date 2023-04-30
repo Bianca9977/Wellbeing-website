@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Select from 'react-select';
 import './App.scss';
 import { useNavigate } from "react-router-dom";
-import Header from './components/Header';
 
 export default function Home() {
     let navigate = useNavigate();
@@ -36,12 +35,7 @@ export default function Home() {
       label: "Stressed"
     },
     {
-      value:  4,
-      slug: 'lonely',
-      label: "Lonely"
-    },
-    {
-      value: 5,
+      value: 4,
       slug: 'explore',
       label: "I don't know"
     }
@@ -64,10 +58,10 @@ export default function Home() {
 
     return (
       <div className="component-app">
-        <Header />
         <div className='container'>
           <h1>{ greeting() }</h1>
-          <h2>Input your mood and <br/> explore suggested activities</h2>
+          <h2>Welcome to <span className='bold-text'>Lull</span>, a website for mental wellbeing  <br/> created for international graduate students.</h2>
+          <h2 className='subtext'>Input your mood and <br/> explore suggested activities</h2>
           <Select options={options}  onChange={handleChange} isSearchable={false} placeholder="Select a mood"
           className="react-select-container"
           classNamePrefix="react-select" />

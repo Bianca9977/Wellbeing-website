@@ -82,7 +82,7 @@
       animation-fill-mode: forwards;
 
       @media (max-width: 768px) {
-        font-size: 48px;
+        font-size: 40px;
         line-height: 1;
         letter-spacing: 3px;
       }
@@ -93,7 +93,7 @@
       font-family: 'Overpass', sans-serif;
       font-weight: 400;
       color: white;
-      margin: 50px 0 20px 0;
+      margin: 6px 0 20px 0;
       opacity: 0;
       animation: fadeInAnimation ease 1s;
       animation-delay: 2s;
@@ -101,7 +101,20 @@
       animation-fill-mode: forwards;
 
       @media (max-width: 768px) {
-        font-size: 22px;
+        font-size: 20px;
+      }
+
+      .bold-text {
+        font-family: 'Futura Bold';
+      }
+
+      &.subtext {
+        margin: 50px 0 20px 0;
+        animation-delay: 4s;
+
+        @media (max-width: 768px) {
+          margin-top: 20px;
+        }
       }
     }
 
@@ -110,7 +123,7 @@
       &__control {
         opacity: 0;
         animation: fadeInAnimation ease 2s;
-        animation-delay: 3s;
+        animation-delay: 5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
       }
@@ -157,8 +170,8 @@
       cursor: pointer;
 
       @media (max-width: 768px) {
-        font-size: 22px;
-        height: 40px;
+        font-size: 20px;
+        height: 30px;
       }
 
     }
@@ -176,7 +189,7 @@
       }
 
       @media (max-width: 768px) {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
 
