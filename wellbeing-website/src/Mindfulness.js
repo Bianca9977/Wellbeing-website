@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-elastic-carousel';
 import { Routes, Route, useParams } from "react-router-dom";
 import './styles/mindfulness.scss';
@@ -7,19 +7,33 @@ import { useNavigate } from "react-router-dom";
 import Item from './components/Item';
 import Header from './components/Header';
 import BackButton from './components/BackButton';
+import VideoModaL from './components/VideoModal';
 
 export default function Mindfulness() {
     let navigate = useNavigate();
     let params = useParams();
     const mood = params.mood;
 
-    let items= [
-        {id: 1, title: 'item #1'},
-        {id: 2, title: 'item #2'},
-        {id: 3, title: 'item #3'},
-        {id: 4, title: 'item #4'},
-        {id: 5, title: 'item #5'}
-    ]
+    const [isToggled, setIsToggled] = useState(false);
+    const [modalVideoLink, setModalVideoLink] = useState('');
+
+    const openModal = (link) => {
+        console.log("open modal " + link);
+        setLink(link);
+        setIsToggled(!isToggled);
+    }
+
+    const closeModal = () => {
+        console.log("close modal " );
+        setLink('');
+        setIsToggled(!isToggled);
+    }
+
+    const setLink = (link) => {
+        console.log("set link " + link);
+        setModalVideoLink(link)
+    }
+
     const breakPoints = [
         { width: 1, itemsToShow: 1 },
         { width: 550, itemsToShow: 1, itemsToScroll: 2 },
@@ -27,34 +41,50 @@ export default function Mindfulness() {
     ];
 
     const happyRecomm = [
-        {
-
-        }
+        {id: 1, title: '10 Minutes Outdoor Walking Meditation', link: 'https://www.youtube.com/embed/HE9iP3B4Azo'},
+        {id: 2, title: '1 Minute Mini Meditation: Breathe', link: 'https://www.youtube.com/embed/cEqZthCaMpo'},
+        {id: 3, title: '1 Minute Mini Meditation: Appreciate Nature', link: 'https://www.youtube.com/embed/nsGbtrl1WkU'},
     ]
 
     const sadRecomm = [
-        {
-            
-        }
+        {id: 1, title: '10 Minutes Reset Meditation', link: 'https://www.youtube.com/embed/QHkXvPq2pQE'},
+        {id: 2, title: '6 Minutes Calming Meditation for Crisis Response', link: 'https://www.youtube.com/embed/e0NYq1KHdUA'},
+        {id: 3, title: '1 Minute Mini Meditation: Unwind', link: 'https://www.youtube.com/embed/ldFD-L-Csz0'},
     ]
 
     const stressedRecomm = [
-        {
-            
-        }
-    ]
-
-    const lonelyRecomm = [
-        {
-            
-        }
+        {id: 1, title: '10 Minutes Meditation to Reframe Stress', link: 'https://www.youtube.com/embed/sG7DBA-mgFY'},
+        {id: 2, title: '12 Minutes Breathing Practice for Exams', link: 'https://www.youtube.com/embed/LBbQK2HIvvI'},
+        {id: 3, title: '10 Minutes Meditation for Stress', link: 'https://www.youtube.com/embed/lS0kcSNlULw'},
     ]
 
     const exploreRecomm = [
-        {
-            
-        }
+        {id: 1, title: '3 Minutes Meditation for Identifying Feelings', link: 'https://www.youtube.com/embed/2mcIUWOr3B4'},
+        {id: 2, title: '1 Minute Mini Meditation: Breathe', link: 'https://www.youtube.com/embed/cEqZthCaMpo'},
+        {id: 3, title: '1 Minute Mini Meditation: Appreciate Nature', link: 'https://www.youtube.com/embed/nsGbtrl1WkU'},
+        {id: 4, title: '1 Minute Mini Meditation: Unwind', link: 'https://www.youtube.com/embed/ldFD-L-Csz0'},
+        {id: 5, title: '10 Minutes Outdoor Walking Meditation', link: 'https://www.youtube.com/embed/HE9iP3B4Azo'},
+        {id: 6, title: '10 Minutes Reset Meditation', link: 'https://www.youtube.com/embed/QHkXvPq2pQE'},
+        {id: 7, title: '10 Minutes Meditation to Reframe Stress', link: 'https://www.youtube.com/embed/sG7DBA-mgFY'},
+        {id: 8, title: '12 Minutes Breathing Practice for Exams', link: 'https://www.youtube.com/embed/LBbQK2HIvvI'},
     ]
+
+    function getMoodArray() {
+        switch (mood) {
+            case 'happy':
+            return happyRecomm;
+            break;
+            case 'sad':
+            return sadRecomm;
+            break;
+            case 'stressed':
+            return stressedRecomm;
+            break;
+            default:
+            return exploreRecomm;
+            break;
+        }
+    }
 
     function goToExplore() {
         navigate('/explore');
@@ -80,8 +110,8 @@ export default function Mindfulness() {
                     <h2>Explore these meditation sessions:</h2>
                     )}
                     <Carousel breakPoints={breakPoints}>
-                        {items.map((item) => (
-                            <Item key={item.id} item={item}></Item>
+                        {getMoodArray().map((item) => (
+                            <Item onClick={() => openModal(item.link)} key={item.id} item={item}></Item>
                         ))}
                     </Carousel>
                 </div>
@@ -93,6 +123,10 @@ export default function Mindfulness() {
                     </button>
                 )}
           </div>
+          
+            {isToggled && 
+                <VideoModaL onClickClose={() => closeModal()} link={modalVideoLink}></VideoModaL>
+            }
         </div>
       );
 }

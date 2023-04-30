@@ -1,0 +1,24 @@
+.video-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .video-container {
+        position: relative;
+
+        .close-button {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    }
+}
