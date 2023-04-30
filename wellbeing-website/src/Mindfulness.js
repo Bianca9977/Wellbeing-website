@@ -18,19 +18,16 @@ export default function Mindfulness() {
     const [modalVideoLink, setModalVideoLink] = useState('');
 
     const openModal = (link) => {
-        console.log("open modal " + link);
         setLink(link);
         setIsToggled(!isToggled);
     }
 
     const closeModal = () => {
-        console.log("close modal " );
         setLink('');
         setIsToggled(!isToggled);
     }
 
     const setLink = (link) => {
-        console.log("set link " + link);
         setModalVideoLink(link)
     }
 

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import './styles/dayboost.scss';
 import Header from './components/Header';
 import BackButton from './components/BackButton';
+import Carousel from 'react-elastic-carousel';
+import VideoModaL from './components/VideoModal';
+import Item from './components/Item';
 
 export default function DayBoost() {
     let navigate = useNavigate();
@@ -11,36 +14,80 @@ export default function DayBoost() {
     const time = params.time;
     const mood = params.mood;
 
+    const [isToggled, setIsToggled] = useState(false);
+    const [modalVideoLink, setModalVideoLink] = useState('');
+
+    const openModal = (link) => {
+      setLink(link);
+      setIsToggled(!isToggled);
+    }
+
+    const closeModal = () => {
+      setLink('');
+      setIsToggled(!isToggled);
+    }
+
+    const setLink = (link) => {
+      setModalVideoLink(link)
+    }
+
+    const breakPoints = [
+      { width: 1, itemsToShow: 1 },
+      { width: 550, itemsToShow: 1, itemsToScroll: 2 },
+      { width: 768, itemsToShow: 2, itemsToScroll: 2 }
+    ];
+
     const morningRecomm = [
       {
-        link: '',
-        text: "text1"
+        id: 1,
+        link: 'https://www.youtube.com/embed/bRXm9Ct9wwI',
+        title: "How to Start a Mindful Morning Routine"
       },
       {
-        link: '',
-        text: "text2"
+        id: 2,
+        link: 'https://www.youtube.com/embed/m-63HSBOPqo',
+        title: "20 Minutes Wake Up Home Workout"
+      },
+      {
+        id: 3,
+        link: 'https://www.youtube.com/embed/IReEu2kI6oI',
+        title: "1 Minute Mini Meditation for Focus Finding"
       }
     ]
 
     const afternoonRecomm = [
       {
-        link: '',
-        text: "text1"
+        id: 1,
+        link: 'https://www.youtube.com/embed/QtE00VP4W3Y',
+        title: "2 Minutes Meditation for Quick Focus Reset"
       },
       {
-        link: '',
-        text: "text2"
+        id: 2,
+        link: 'https://www.youtube.com/embed/eY54f3dyhcI',
+        title: "1 Minute Mini Meditation for Experiencing your Food"
+      },
+      {
+        id: 3,
+        link: 'https://www.youtube.com/embed/Sh01VlBomI8',
+        title: "25 Minutes Motivation Boosting Workout"
       }
     ]
 
     const eveningRecomm = [
       {
-        link: '',
-        text: "text1"
+        id: 1,
+        link: 'https://www.youtube.com/embed/ft-vhYwHzxw',
+        title: "Dealing with Racing Thoughts While Trying To Sleep"
       },
       {
-        link: '',
-        text: "text2"
+        id: 2,
+        link: 'https://www.youtube.com/embed/oA9sOhJaGGQ',
+        title: "45 Minutes Bedtime Story for Adults"
+      },
+      {
+        id: 3,
+        link: 'https://www.youtube.com/embed/0HnvJLDtPwY',
+        title: "45 Minutes Deep Sleep Music"
       }
     ]
 
@@ -67,27 +114,30 @@ export default function DayBoost() {
     }
 
     return (
-        <div className="dayboost-container">
-            <Header />
-            <BackButton />
-            <div className='container'>
-              <h1>Resources for <br/> a smooth { time }</h1>
-              <div className="resources-container">
-                  {getTimeArray().map((item, index) => 
-                    <div className='resource' key={index}>
-                      <p dangerouslySetInnerHTML={{ __html: item.text }}></p>
-                    </div>
-                  )}
-              </div>
+      <div className="dayboost-container">
+          <Header />
+          <BackButton />
+          <div className='container'>
+            <h1>Resources for <br/> a smooth { time }</h1>
+            <div className="resources-container">
+              <Carousel breakPoints={breakPoints}>
+                {getTimeArray().map((item) => (
+                    <Item onClick={() => openModal(item.link)} key={item.id} item={item}></Item>
+                ))}
+              </Carousel>
+            </div>
 
-              {(mood !== 'explore') ?  (<button className='explore-button' onClick={goToExplore}>
-                  GO TO EXPLORE
-              </button> ) : (
-                <button className='explore-button' onClick={goToHomepage}>
-                  INPUT MOOD
-                </button>
-              )}
-          </div>
+            {(mood !== 'explore') ?  (<button className='explore-button' onClick={goToExplore}>
+                GO TO EXPLORE
+            </button> ) : (
+              <button className='explore-button' onClick={goToHomepage}>
+                INPUT MOOD
+              </button>
+            )}
         </div>
-      );
+        {isToggled && 
+            <VideoModaL onClickClose={() => closeModal()} link={modalVideoLink}></VideoModaL>
+        }
+      </div>
+    );
 }
