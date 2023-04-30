@@ -139,7 +139,7 @@ export default function PeerSupport() {
                   <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className='chats-container'>
-                {(mood !== 'explore') && <h2 className='margin-top'>Recommended chat if you feel <span className='mood-text'>{mood}</span>:</h2>}
+                {(mood !== 'explore') && <h2 className='margin-top text-center'>Recommended chat if you feel <span className='mood-text'>{mood}</span>:</h2>}
                 <div className='recommended-chats'>
                   {getMoodArray().map((item, index) => { 
                   return  item.recommended &&

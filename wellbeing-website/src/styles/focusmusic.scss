@@ -2,7 +2,7 @@
 @import './fonts.scss';
 @import './common.scss';
 
-.peersupport-container {
+.focusmusic-container {
     background: linear-gradient(179.14deg, #0F4C81 3.38%, #5CAD8A 63.08%, #FFB347 131.35%);
     min-height: 100vh;
 
@@ -37,64 +37,26 @@
             }
         }
 
-        h2 {
-            font-size: 22px;
-            margin-bottom: 0.5rem;
-            color: white;
-            text-align: start;
-            font-family: 'Montserrat', sans-serif;
-
-            @media (max-width: 768px) {
-                font-size: 18px;
-            }
-
-            .mood-text {
-                font-style: italic;
-                font-weight: 800;
-                padding-right: 6px;
-            }
-
-            &.margin-top {
-                margin-top: 3rem;
-            }
-
-            &.text-center {
-                text-align: center !important;
-            }
-        }
-
-        h3 {
-            text-align: center;
-            margin-bottom: 0.5rem;
-            &.margin-top {
-                margin-top: 3rem;
-            }
-        }
-
-        .text {
-            text-align: left;
-        }
-
-        .recommended-chats,
-        .other-chats {
+        .resources-container { 
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            margin-top: 10rem;
 
             @media (max-width: 768px) {
                 flex-direction: column;
+                margin-top: 1rem;
                 justify-content: center;
                 align-items: center;
             }
 
-            .chat {
+            .resource {
                 background-color: transparent;
                 color: white;
-                font-family: "Montserrat", sans-serif;
+                font-family: "Overpass", sans-serif;
                 font-weight: 600;
                 font-size: 16px;
                 letter-spacing: 2px;
-                height: 90px;
+                height: 200px;
                 margin: 10px 30px 0 0;
                 display: flex;
                 justify-content: center;
@@ -104,16 +66,9 @@
                 border-radius: 16px;
                 transition: all 1s;
                 min-width: 120px;
-                width: 30%;
+                width: 50%;
                 max-width: 540px;
                 cursor: pointer;
-                line-height: 1.3;
-
-                a {
-                    outline: none;
-                    text-decoration: none;
-                    color: white;
-                }
 
                 p {
                     span {
@@ -137,29 +92,6 @@
                     }
                 }
             }
-        }
-
-
-        .recommended-chats {
-
-            .chat {
-                max-width: 350px;
-                height: 120px;
-                font-size: 24px;
-                width: 50%;
-                line-height: 1.3;
-
-                p {
-                    line-height: 1;
-                    font-size: 24px;
-                    text-align: center !important;
-
-                    span {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-
+        }      
     }
 }

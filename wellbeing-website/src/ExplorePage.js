@@ -31,7 +31,7 @@ export default function ExplorePage() {
         },
         {
             text: `FOCUS <br/> MUSIC`,
-            route: '/focus-music'
+            route: '/focus-music/explore'
         }
     ]
 
