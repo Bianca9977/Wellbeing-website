@@ -102,7 +102,7 @@ export default function Reflection() {
           <Header />
           <BackButton />
           <div className='container'>
-              <h1>Self-reflection for <br/> Personal Growth</h1>
+              <h1>Self-reflection for Personal Growth</h1>
               <div>
                   <h2>Why self-reflection?</h2>
               </div>
