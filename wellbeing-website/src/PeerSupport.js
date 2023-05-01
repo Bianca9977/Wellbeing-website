@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route, useParams } from "react-router-dom";
+import React, {useEffect} from 'react';
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import './styles/peersupport.scss';
 import Header from './components/Header';
@@ -9,6 +9,10 @@ export default function PeerSupport() {
     let navigate = useNavigate();
     let params = useParams();
     const mood = params.mood;
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
     const happyRecomm = [
       {

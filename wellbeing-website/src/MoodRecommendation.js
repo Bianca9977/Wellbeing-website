@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route, useParams } from "react-router-dom";
+import React, {useEffect} from 'react';
+import { useParams } from "react-router-dom";
 import './styles/recommendations.scss';
 import ActivityCard from './components/ActivityCard';
 import Header from './components/Header';
@@ -10,6 +10,10 @@ export default function MoodRecommendation() {
     let params = useParams();
     const mood = params.mood;
     let navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const timeResources = [
         {

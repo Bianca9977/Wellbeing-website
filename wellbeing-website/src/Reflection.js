@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import './styles/reflection.scss';
@@ -11,6 +11,10 @@ export default function Reflection() {
     let navigate = useNavigate();
     let params = useParams();
     const mood = params.mood;
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
     const breakPoints = [
       { width: 1, itemsToShow: 1 },

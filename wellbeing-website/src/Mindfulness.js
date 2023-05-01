@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-elastic-carousel';
 import { Routes, Route, useParams } from "react-router-dom";
 import './styles/mindfulness.scss';
@@ -16,6 +16,10 @@ export default function Mindfulness() {
 
     const [isToggled, setIsToggled] = useState(false);
     const [modalVideoLink, setModalVideoLink] = useState('');
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const openModal = (link) => {
         setLink(link);

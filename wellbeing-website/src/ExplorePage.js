@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './styles/recommendations.scss';
 import ActivityCard from './components/ActivityCard';
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,10 @@ import BackButton from './components/BackButton';
 export default function ExplorePage() {
 
     let navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     const timeResources = [
         {

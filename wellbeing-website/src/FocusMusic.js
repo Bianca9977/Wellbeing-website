@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Routes, Route, useParams } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import './styles/focusmusic.scss';
 import Header from './components/Header';
@@ -14,6 +14,10 @@ export default function FocusMusic() {
 
     const [isToggled, setIsToggled] = useState(false);
     const [modalVideoLink, setModalVideoLink] = useState('');
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
     const openModal = (link) => {
       setLink(link);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import './styles/universityresources.scss';
 import { useNavigate } from "react-router-dom";
@@ -9,6 +9,10 @@ export default function UniversityResources() {
     let params = useParams();
     let navigate = useNavigate();
     const mood = params.mood;
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
     const resources = [
       {
