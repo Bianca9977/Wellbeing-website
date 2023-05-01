@@ -137,12 +137,17 @@ export default function PeerSupport() {
           <Header />
           <BackButton />
           <div className='container'>
-              <h1>Peer support for community wellbeing</h1>
-              <div>
+              <h1 data-aos="fade-up"
+                data-aos-duration="1000">Peer support for community wellbeing</h1>
+              <div data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000">
                   <h2 className='margin-top'>How does it work?</h2>
                   <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
-              <div className='chats-container'>
+              <div className='chats-container' data-aos="fade-up"
+                data-aos-delay="2000"
+                data-aos-duration="1000">
                 {(mood !== 'explore') && <h2 className='margin-top text-center'>Recommended chat if you feel <span className='mood-text'>{mood}</span>:</h2>}
                 <div className='recommended-chats'>
                   {getMoodArray().map((item, index) => { 
@@ -154,12 +159,18 @@ export default function PeerSupport() {
                     </div>
                     })}
                 </div>
-                {(mood !== 'explore') ? (
-                  <h3 className='margin-top'>Other chats:</h3>
-                ) : (
-                  <h3 className='margin-top'>All available chats:</h3>
-                )}
-                <div className='other-chats'>
+                <div data-aos="fade-up"
+                data-aos-delay="3000"
+                data-aos-duration="1000">
+                  {(mood !== 'explore') ? (
+                    <h3 className='margin-top'>Other chats:</h3>
+                  ) : (
+                    <h3 className='margin-top'>All available chats:</h3>
+                  )}
+                </div>
+                <div className='other-chats' data-aos="fade-up"
+                data-aos-delay="3000"
+                data-aos-duration="1000">
                   {getMoodArray().map((item, index) => { 
                   return !item.recommended &&
                       <div className='chat' key={index}>

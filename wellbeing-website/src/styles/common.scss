@@ -20,6 +20,11 @@
     right: 0;
     bottom: 5%;
     transition: all 1s;
+    opacity: 0;
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
     &:hover {
         transition: all 1s;
@@ -276,4 +281,13 @@ h2 {
 p {
     color: white;
     font-size: 16px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }

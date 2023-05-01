@@ -72,8 +72,11 @@ export default function FocusMusic() {
           <Header />
           <BackButton />
           <div className='container'>
-            <h1>Focus music <br/> for productivity</h1>
-            <div className="resources-container">
+            <h1 data-aos="fade-up"
+                data-aos-duration="1000">Focus music <br/> for productivity</h1>
+            <div className="resources-container" data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000">
               <Carousel breakPoints={breakPoints}>
                 {items.map((item) => (
                     <Item onClick={() => openModal(item.link)} key={item.id} item={item}></Item>

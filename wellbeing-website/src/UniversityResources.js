@@ -38,8 +38,11 @@ export default function UniversityResources() {
         <Header />
         <BackButton />
         <div className='container'>
-            <h1>University Resources</h1>
-            <div className="resources-container">
+            <h1 data-aos="fade-up"
+                data-aos-duration="1000">University Resources</h1>
+            <div className="resources-container" data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000">
                 {resources.map((item, index) => 
                   <div className='resource' key={index}>
                     <p dangerouslySetInnerHTML={{ __html: item.text }}></p>

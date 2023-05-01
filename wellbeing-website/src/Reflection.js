@@ -152,16 +152,25 @@ export default function Reflection() {
           <Header />
           <BackButton />
           <div className='container'>
-              <h1>Self-reflection for Personal Growth</h1>
-              <div>
+              <h1 data-aos="fade-up"
+                data-aos-duration="1000">Self-reflection for Personal Growth</h1>
+              <div data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000">
                   <h2>Why self-reflection?</h2>
               </div>
+              <div data-aos="fade-up"
+                data-aos-delay="2000"
+                data-aos-duration="1000">
               {(mood !== 'explore') ?  (
                 <h2>Reflect on these questions when you are feeling <span className='mood-text'>{mood}</span>:</h2>)
                 : (
                 <h2>Reflect on these questions to gain a better understanding of your feelings:</h2>
               )}
-              <div className="text-area-container">
+              </div>
+              <div className="text-area-container" data-aos="fade-up"
+                data-aos-delay="2000"
+                data-aos-duration="1000">
                   <Carousel breakPoints={breakPoints}>
                       {getMoodArray().map((item, index) => (
                           <fieldset key={index}>

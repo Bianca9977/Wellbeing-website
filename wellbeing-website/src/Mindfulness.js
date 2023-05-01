@@ -111,11 +111,16 @@ export default function Mindfulness() {
             <Header />
             <BackButton />
             <div className='container'>
-                <h1>Cultivating <br/> Mindfulness</h1>
-                <div>
+                <h1 data-aos="fade-up"
+                data-aos-duration="1000">Cultivating <br/> Mindfulness</h1>
+                <div data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000">
                     <h2>Why mindfulness?</h2>
                 </div>
-                <div>
+                <div data-aos="fade-up"
+                data-aos-delay="2000"
+                data-aos-duration="1000">
                     {(mood !== 'explore') ?  (
                     <h2>Check these meditation sessions for when you are feeling <span className='mood-text'>{mood}</span>:</h2>)
                     : (
