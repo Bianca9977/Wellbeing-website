@@ -1,0 +1,69 @@
+body {
+    &.light-mode {
+        .component-app {
+            background: linear-gradient(269.42deg, #E6F8B2 -9.51%, #E6F8B2 -9.5%, #FF8552 107.42%);
+        }
+
+        .component-recommendations {
+            background: linear-gradient(269.42deg, #E6F8B2 -9.51%, #E6F8B2 -9.5%, #FF8552 107.42%);
+        }
+
+        .dayboost-container,
+        .mindfulness-container,
+        .reflection-container,
+        .peersupport-container,
+        .university-container,
+        .focusmusic-container {
+            background: linear-gradient(179.54deg, #FF8552 -18.95%, #FF8552 -18.95%, #E6F8B2 177.51%);
+        }
+
+        .component-activity-card {
+            &:hover {
+                cursor: pointer;
+                transition: all 1s;
+                border-color: #E6F8B2;
+                box-shadow: 0px 4px 50px 0px #E6F8B2;
+            }
+        }
+
+        .component-item {
+            .video-container { 
+                @media (min-width: 768px) {
+                    &:hover {
+                        cursor: pointer;
+                        transition: all 1s;
+                        border-color: #E6F8B2;
+                        box-shadow: 0px 4px 30px 10px #E6F8B2;
+                
+                        .circle {
+                        transition: all 1s;
+                        border-color: #E6F8B2;
+                        box-shadow: 0px 4px 30px 10px #E6F8B2;
+                        }
+                
+                        .triangle {
+                        transition: all 1s;
+                        border-left: 40px solid #E6F8B2;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rec-arrow {
+            &:enabled { 
+                &:hover {
+                    color: #E6F8B2 !important;
+                }
+            }
+        }
+
+        .explore-button {
+            &:hover {
+                transition: all 1s;
+                border-color: #E6F8B2;
+                box-shadow: 0px 4px 30px 0px #E6F8B2;
+            }
+        }
+    }
+}

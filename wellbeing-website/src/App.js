@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   Routes,
   Route
@@ -13,8 +13,32 @@ import PeerSupport from './PeerSupport';
 import UniversityResources from './UniversityResources';
 import DayBoost from './DayBoost';
 import FocusMusic from './FocusMusic';
+import './styles/lightmode.scss';
 
 export default function App() {
+
+    useEffect(() => {
+      setTheme();
+    }, []);
+
+    function setTheme() {
+      console.log("app load")
+      if (localStorage.getItem('webTheme') == 'Dark') {
+        window.webTheme = "Dark";
+        localStorage.setItem('webTheme', window.webTheme);
+        var element = document.body;
+        element.classList.remove("light-mode");
+      } else if (localStorage.getItem('webTheme') == 'Light') {
+        window.webTheme = "Light";
+        localStorage.setItem('webTheme', window.webTheme);
+        var element = document.body;
+        element.classList.add("light-mode");
+      }
+      else {
+        window.webTheme = "Dark";
+        localStorage.setItem('webTheme', window.webTheme);
+      }
+    }
     return (
       <div className="App">
         <Routes>

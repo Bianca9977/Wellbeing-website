@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import ThemeButton from './components/ThemeButton';
 import './App.scss';
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-    let navigate = useNavigate();
-    const [mood, setMood] = useState(null);
+  let navigate = useNavigate();
+  const [mood, setMood] = useState(null);
 
-    const handleChange = (selectedOption) => {
-        setMood(selectedOption);
-        if (selectedOption.slug != "explore") { 
-          navigate('/recommendation/' + selectedOption.slug);
-        }
-        else {
-          navigate('/explore');
-        }
-        console.log(`Option selected:`, selectedOption.slug);
-    };
+  const handleChange = (selectedOption) => {
+      setMood(selectedOption);
+      if (selectedOption.slug != "explore") { 
+        navigate('/recommendation/' + selectedOption.slug);
+      }
+      else {
+        navigate('/explore');
+      }
+  };
 
   const options = [
     { 
@@ -33,6 +33,11 @@ export default function Home() {
       value:  3,
       slug: 'stressed',
       label: "Stressed"
+    },
+    {
+      value:  4,
+      slug: 'lonely',
+      label: "Lonely"
     },
     {
       value: 4,
@@ -60,6 +65,7 @@ export default function Home() {
       <div className="component-app">
         <div className='container'>
           <h1>{ greeting() }</h1>
+          <ThemeButton></ThemeButton>
           <h2>Welcome to <span className='bold-text'>Lull</span>, a website for mental wellbeing  <br/> created for international graduate students.</h2>
           <h2 className='subtext'>Input your mood and <br/> explore suggested activities</h2>
           <Select options={options}  onChange={handleChange} isSearchable={false} placeholder="Select a mood"
