@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import './styles/universityresources.scss';
 import { useNavigate } from "react-router-dom";
 import Header from './components/Header';

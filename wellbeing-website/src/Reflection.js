@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import './styles/reflection.scss';
 import { Tooltip } from 'react-tooltip';

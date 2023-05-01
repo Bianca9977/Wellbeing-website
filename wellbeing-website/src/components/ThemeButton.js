@@ -6,8 +6,7 @@ export default function ThemeButton() {
     const [showLightTheme, setLightTheme] = useState(false);
 
     useEffect(() => {
-        console.log("page load " + localStorage.getItem('webTheme'));
-        if (localStorage.getItem('webTheme') == 'Dark') {
+        if (localStorage.getItem('webTheme') === 'Dark') {
             setTheme('Dark');
             setLightTheme(false);
         }
@@ -18,17 +17,17 @@ export default function ThemeButton() {
     }, [theme]);
 
     function toggleTheme() {
-        if (localStorage.getItem('webTheme') == 'Dark') {
+        if (localStorage.getItem('webTheme') === 'Dark') {
             window.webTheme = 'Light';
             localStorage.setItem('webTheme', window.webTheme);
-            var element = document.body;
+            let element = document.body;
             element.classList.add("light-mode");
             setTheme('Light');
         }
-        else if (localStorage.getItem('webTheme') == 'Light') {
+        else if (localStorage.getItem('webTheme') === 'Light') {
             window.webTheme = 'Dark';
             localStorage.setItem('webTheme', window.webTheme);
-            var element = document.body;
+            let element = document.body;
             element.classList.remove("light-mode");
             setTheme('Dark');
         }

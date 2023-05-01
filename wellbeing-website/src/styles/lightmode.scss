@@ -1,3 +1,5 @@
+@import './common.scss';
+
 body {
     &.light-mode {
         .component-app {
@@ -21,8 +23,8 @@ body {
             &:hover {
                 cursor: pointer;
                 transition: all 1s;
-                border-color: #E6F8B2;
-                box-shadow: 0px 4px 50px 0px #E6F8B2;
+                border-color: $color_light_green;
+                box-shadow: 0px 4px 50px 0px $color_light_green;
             }
         }
 
@@ -32,18 +34,18 @@ body {
                     &:hover {
                         cursor: pointer;
                         transition: all 1s;
-                        border-color: #E6F8B2;
-                        box-shadow: 0px 4px 30px 10px #E6F8B2;
+                        border-color: $color_light_green;
+                        box-shadow: 0px 4px 30px 10px $color_light_green;
                 
                         .circle {
                         transition: all 1s;
-                        border-color: #E6F8B2;
-                        box-shadow: 0px 4px 30px 10px #E6F8B2;
+                        border-color: $color_light_green;
+                        box-shadow: 0px 4px 30px 10px $color_light_green;
                         }
                 
                         .triangle {
                         transition: all 1s;
-                        border-left: 40px solid #E6F8B2;
+                        border-left: 40px solid $color_light_green;
                         }
                     }
                 }
@@ -53,7 +55,7 @@ body {
         .rec-arrow {
             &:enabled { 
                 &:hover {
-                    color: #E6F8B2 !important;
+                    color: $color_light_green !important;
                 }
             }
         }
@@ -61,8 +63,8 @@ body {
         .explore-button {
             &:hover {
                 transition: all 1s;
-                border-color: #E6F8B2;
-                box-shadow: 0px 4px 30px 0px #E6F8B2;
+                border-color: $color_light_green;
+                box-shadow: 0px 4px 30px 0px $color_light_green;
             }
         }
     }
