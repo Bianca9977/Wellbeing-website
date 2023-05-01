@@ -87,10 +87,10 @@ export default function ExplorePage() {
             <div className="col-left" data-aos="fade-up"
                 data-aos-delay="500"
                 data-aos-duration="1000">
-                <h1 className='title-text explore-text'>Explore all <br/> available resources <br/> and activities, not <br/> related to a <br/> particular mood
+                <h1 className='title-text explore-text'>Explore available <br/> resources and <br/> activities, not <br/> related to a <br/> particular mood
                 <br/>
                 <br/>
-                Or input your mood <span onClick={goToHomepage}>here</span>
+                Or input your <br/> mood <span onClick={goToHomepage}>here</span>
                 </h1>
             </div>
             <div className="col-right" data-aos="fade-up"
