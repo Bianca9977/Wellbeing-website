@@ -61,6 +61,12 @@ export default function Mindfulness() {
         {id: 3, title: '10 Minutes Meditation for Stress', link: 'https://www.youtube.com/embed/lS0kcSNlULw'},
     ]
 
+    const lonelyRecomm = [
+        {id: 1, title: '3 Minutes Meditation to Enjoy Alone Time', link: 'https://www.youtube.com/embed/7Ob1sWh9u2I'},
+        {id: 2, title: '2 Minutes Meditation to Manage Anxious Thoughts And Stress', link: 'https://www.youtube.com/embed/EfubAj5f_rM'},
+        {id: 3, title: '10 Minutes Outdoor Walking Meditation', link: 'https://www.youtube.com/embed/HE9iP3B4Azo'},
+    ]
+
     const exploreRecomm = [
         {id: 1, title: '3 Minutes Meditation for Identifying Feelings', link: 'https://www.youtube.com/embed/2mcIUWOr3B4'},
         {id: 2, title: '1 Minute Mini Meditation: Breathe', link: 'https://www.youtube.com/embed/cEqZthCaMpo'},
@@ -82,6 +88,9 @@ export default function Mindfulness() {
             break;
             case 'stressed':
             return stressedRecomm;
+            break;
+            case 'lonely':
+            return lonelyRecomm;
             break;
             default:
             return exploreRecomm;

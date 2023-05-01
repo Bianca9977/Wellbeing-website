@@ -25,37 +25,87 @@ export default function Reflection() {
     let items= [
       {question: 'item #1'},
       {question: 'item #2'},
-  ]
+    ]
 
     const happyRecomm = [
       {
-
+        question: 'What makes you feel happy in this moment?'
+      },
+      {
+        question: 'What are you grateful for today?'
+      },
+      {
+        question: 'Let your thoughts free'
       }
     ]
 
     const sadRecomm = [
       {
-          
+        question: 'What makes you feel sad in this moment?'
+      },
+      {
+        question: 'How did you overcome this feeling in the past?'
+      },
+      {
+        question: 'Let your thoughts free'
       }
     ]
 
     const stressedRecomm = [
       {
-          
+        question: 'What makes you feel stressed in this moment?'
+      },
+      {
+        question: 'What can you try doing differently if the problem recurs?'
+      },
+      {
+        question: 'Let your thoughts free'
       }
     ]
 
     const lonelyRecomm = [
       {
-          
+        question: 'What makes you feel lonely in this moment?'
+      },
+      {
+        question: 'What activities could you do to minimise this feeling?'
+      },
+      {
+        question: 'Let your thoughts free'
       }
     ]
 
     const exploreRecomm = [
       {
-          
+        question: 'How have you been during the past few days?'
+      },
+      {
+        question: 'What is a goal you want to accomplish in the near future?'
+      },
+      {
+        question: 'Let your thoughts free'
       }
     ]
+
+    function getMoodArray() {
+      switch (mood) {
+        case 'happy':
+          return happyRecomm;
+          break;
+        case 'sad':
+          return sadRecomm;
+          break;
+        case 'stressed':
+          return stressedRecomm;
+          break;
+        case 'lonely':
+          return lonelyRecomm;
+          break;
+        default:
+          return exploreRecomm;
+          break;
+      }
+    }
 
 
     function goToExplore() {
@@ -113,7 +163,7 @@ export default function Reflection() {
               )}
               <div className="text-area-container">
                   <Carousel breakPoints={breakPoints}>
-                      {items.map((item, index) => (
+                      {getMoodArray().map((item, index) => (
                           <fieldset key={index}>
                             <legend className='legend' id={'legend-' +  index}>{item.question}</legend>
                             <textarea className="input" id={'input-' + index} name="myInput" rows="10" cols="50"></textarea>
