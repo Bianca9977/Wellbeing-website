@@ -29,7 +29,7 @@ export default function Reflection() {
 
     const happyRecomm = [
       {
-        question: 'What makes you feel happy in this moment?'
+        question: 'What makes you feel happy at this moment?'
       },
       {
         question: 'What are you grateful for today?'
@@ -41,7 +41,7 @@ export default function Reflection() {
 
     const sadRecomm = [
       {
-        question: 'What makes you feel sad in this moment?'
+        question: 'What makes you feel sad at this moment?'
       },
       {
         question: 'How did you overcome this feeling in the past?'
@@ -53,7 +53,7 @@ export default function Reflection() {
 
     const stressedRecomm = [
       {
-        question: 'What makes you feel stressed in this moment?'
+        question: 'What makes you feel stressed at this moment?'
       },
       {
         question: 'What can you try doing differently if the problem recurs?'
@@ -65,7 +65,7 @@ export default function Reflection() {
 
     const lonelyRecomm = [
       {
-        question: 'What makes you feel lonely in this moment?'
+        question: 'What makes you feel lonely at this moment?'
       },
       {
         question: 'What activities could you do to minimise this feeling?'
