@@ -6,7 +6,6 @@ export default function ActivityCard(props) {
   let navigate = useNavigate();
 
   function goToRoute() {
-    console.log("route  " + props.activityRoute);
     navigate(props.activityRoute);
   }
 

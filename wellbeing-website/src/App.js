@@ -22,7 +22,6 @@ export default function App() {
     }, []);
 
     function setTheme() {
-      console.log("app load")
       if (localStorage.getItem('webTheme') == 'Dark') {
         window.webTheme = "Dark";
         localStorage.setItem('webTheme', window.webTheme);

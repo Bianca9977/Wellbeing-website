@@ -67,5 +67,13 @@ body {
                 box-shadow: 0px 4px 30px 0px $color_light_green;
             }
         }
+
+        .chat {
+            &:hover {
+                transition: all 1s;
+                border-color: $color_light_green !important;
+                box-shadow: 0px 4px 30px 0px $color_light_green !important;
+            }
+        }
     }
 }
