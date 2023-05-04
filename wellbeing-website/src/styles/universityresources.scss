@@ -18,7 +18,7 @@
     .container {
         max-width: 60vw;
         height: inherit;
-        margin: 30px auto 0;
+        margin: 8rem auto 0;
 
         @media (max-width: 768px) {
             margin-top: 60px;
@@ -37,14 +37,29 @@
             }
         }
 
+        h2 {
+            font-size: 24px;
+            margin-top: 10rem;
+            color: white;
+            text-align: start;
+            font-family: 'Montserrat', sans-serif;
+
+            @media (max-width: 768px) {
+                margin-top: 1rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+
         .resources-container { 
             display: flex;
             flex-direction: row;
-            margin-top: 10rem;
+            margin-top: 1rem;
 
             @media (max-width: 768px) {
                 flex-direction: column;
-                margin-top: 1rem;
                 justify-content: center;
                 align-items: center;
             }
@@ -70,11 +85,14 @@
                 max-width: 540px;
                 cursor: pointer;
 
+                a {
+                    text-decoration: none;
+                }
+
                 p {
-                    span {
-                        font-family: 'Montserrat Thin', sans-serif;
-                        font-size: 14px;
-                    }
+                    color: white;
+                    font-size: 18px;
+                    font-family: "Montserrat", sans-serif;
                 }
 
                 &:hover {

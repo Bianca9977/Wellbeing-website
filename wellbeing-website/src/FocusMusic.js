@@ -74,8 +74,11 @@ export default function FocusMusic() {
           <div className='container'>
             <h1 data-aos="fade-up"
                 data-aos-duration="1000">Focus music <br/> for productivity</h1>
-            <div className="resources-container" data-aos="fade-up"
+            <h2 data-aos="fade-up"
                 data-aos-delay="1000"
+                data-aos-duration="1000">Explore these music compilations for when you want to focus or just want some background noise:</h2>
+            <div className="resources-container" data-aos="fade-up"
+                data-aos-delay="2000"
                 data-aos-duration="1000">
               <Carousel breakPoints={breakPoints}>
                 {items.map((item) => (

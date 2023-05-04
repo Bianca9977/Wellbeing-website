@@ -16,12 +16,12 @@ export default function UniversityResources() {
 
     const resources = [
       {
-        link: '',
-        text: "text1"
+        link: 'https://www.kth.se/en/student/stod/halsa/studenthalsan/valkommen-till-studenthalsan-i-stockholm-1.409886',
+        text: "Stockholm Student Health Services"
       },
       {
-        link: '',
-        text: "text2"
+        link: 'https://www.kth.se/en/student/stod',
+        text: "Support and Guidance from KTH"
       }
     ]
 
@@ -40,12 +40,17 @@ export default function UniversityResources() {
         <div className='container'>
             <h1 data-aos="fade-up"
                 data-aos-duration="1000">University Resources</h1>
-            <div className="resources-container" data-aos="fade-up"
+            <h2 data-aos="fade-up"
                 data-aos-delay="1000"
+                data-aos-duration="1000">Check these external resources for students suggested by your unviversity:</h2>
+            <div className="resources-container" data-aos="fade-up"
+                data-aos-delay="2000"
                 data-aos-duration="1000">
                 {resources.map((item, index) => 
                   <div className='resource' key={index}>
-                    <p dangerouslySetInnerHTML={{ __html: item.text }}></p>
+                    <a href={item.link} target="_blank">
+                      <p dangerouslySetInnerHTML={{ __html: item.text }}></p>
+                    </a>
                   </div>
                 )}
             </div>

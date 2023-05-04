@@ -18,7 +18,7 @@
     .container {
         max-width: 60vw;
         height: inherit;
-        margin: 30px auto 0;
+        margin: 8rem auto 0;
 
         @media (max-width: 768px) {
             margin-top: 60px;
@@ -37,12 +37,12 @@
             }
 
             @media (min-width: 1600px) {
-                margin: 0 20rem;
+                margin: 0 24rem;
             }
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 0.5rem;
             color: white;
             text-align: start;
@@ -81,6 +81,13 @@
 
         .text {
             text-align: left;
+            margin-bottom: 5rem;
+            
+
+            @media (min-width: 990px) {
+                font-size: 20px;
+                margin-right: 10rem;
+            }
         }
 
         .recommended-chats,

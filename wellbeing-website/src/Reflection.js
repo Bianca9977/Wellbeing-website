@@ -158,6 +158,10 @@ export default function Reflection() {
                 data-aos-delay="1000"
                 data-aos-duration="1000">
                   <h2>Why self-reflection?</h2>
+                  <p className='text'>Self-reflection has been regarded as a useful tool for tracking and impoving wellbeing and personal health.
+                  By reflecting on your current mood, you can gain a better understanding of your thoughts and feelings, which
+                  will lead to positive behaviour change and increased self-awareness. 
+                  </p>
               </div>
               <div data-aos="fade-up"
                 data-aos-delay="2000"
@@ -179,7 +183,7 @@ export default function Reflection() {
                           </fieldset>
                       ))}
                   </Carousel>
-                <button className="save-button" onClick={downloadTxtFile} data-tooltip-id="my-tooltip" data-tooltip-content="Hello world!">Save answers</button>
+                <button className="save-button" onClick={downloadTxtFile} data-tooltip-id="my-tooltip" data-tooltip-content="This will download a text file with your answers">Save answers</button>
               </div>
               {(mood !== 'explore') ?  (<button className='explore-button' onClick={goToExplore}>
                   GO TO EXPLORE

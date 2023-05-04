@@ -143,11 +143,17 @@ export default function PeerSupport() {
                 data-aos-delay="1000"
                 data-aos-duration="1000">
                   <h2 className='margin-top'>How does it work?</h2>
-                  <p className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p className='text'>
+                    An important factor which contributes to mentall wellbeing is represented by the presence of positive social relationships.
+                    The aim of the Discord chats is to create an open and safe environment, where you can interact with like-minded people, discuss
+                    and explore additional resources and activities.
+                  </p>
               </div>
               <div className='chats-container' data-aos="fade-up"
                 data-aos-delay="2000"
                 data-aos-duration="1000">
+
+                <div>
                 {(mood !== 'explore') && <h2 className='margin-top text-center'>Recommended chat if you feel <span className='mood-text'>{mood}</span>:</h2>}
                 <div className='recommended-chats'>
                   {getMoodArray().map((item, index) => { 
@@ -159,15 +165,16 @@ export default function PeerSupport() {
                     </div>
                     })}
                 </div>
+                </div>
+                <div>
                 <div data-aos="fade-up"
                 data-aos-delay="3000"
                 data-aos-duration="1000">
-                  {(mood !== 'explore') ? (
-                    <h3 className='margin-top'>Other chats:</h3>
-                  ) : (
+                  {(mood == 'explore') &&
                     <h3 className='margin-top'>All available chats:</h3>
-                  )}
+                }
                 </div>
+                {(mood == 'explore') &&
                 <div className='other-chats' data-aos="fade-up"
                 data-aos-delay="3000"
                 data-aos-duration="1000">
@@ -179,6 +186,8 @@ export default function PeerSupport() {
                         </a>                
                       </div>
                     })}
+                </div>
+                  }
                 </div>
               </div>
               <div>

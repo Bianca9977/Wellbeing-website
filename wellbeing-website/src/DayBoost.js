@@ -126,8 +126,11 @@ export default function DayBoost() {
           <div className='container'>
             <h1 data-aos="fade-up"
                 data-aos-duration="1000">Resources for <br/> a smooth { time }</h1>
-            <div className="resources-container" data-aos="fade-up"
+            <h2 data-aos="fade-up"
                 data-aos-delay="1000"
+                data-aos-duration="1000">Explore these additional resources for a productive day and a calm evening:</h2>
+            <div className="resources-container" data-aos="fade-up"
+                data-aos-delay="2000"
                 data-aos-duration="1000">
               <Carousel breakPoints={breakPoints}>
                 {getTimeArray().map((item) => (

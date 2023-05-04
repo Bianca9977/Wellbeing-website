@@ -117,6 +117,9 @@ export default function Mindfulness() {
                 data-aos-delay="1000"
                 data-aos-duration="1000">
                     <h2>Why mindfulness?</h2>
+                    <p className='text'>Fundamentally, mindfulness refers to a practice that people can experience at a particular moment or a trait that they gain over time by becoming aware of their sensations and surroundings. 
+                        Rather than trying to eliminate negative emotions, the aim of practising mindfulness is to develop emotional management and support awareness of one’s feelings.
+                        </p>
                 </div>
                 <div data-aos="fade-up"
                 data-aos-delay="2000"
