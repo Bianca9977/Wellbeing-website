@@ -183,7 +183,7 @@ export default function Reflection() {
                           </fieldset>
                       ))}
                   </Carousel>
-                <button className="save-button" onClick={downloadTxtFile} data-tooltip-id="my-tooltip" data-tooltip-content="This will download a text file with your answers">Save answers</button>
+                <button className="save-button" onClick={downloadTxtFile}>Download answers</button>
               </div>
               {(mood !== 'explore') ?  (<button className='explore-button' onClick={goToExplore}>
                   GO TO EXPLORE
@@ -193,7 +193,7 @@ export default function Reflection() {
                 </button>
               )}
           </div>
-          <Tooltip place="bottom" type="info" effect="solid" id="my-tooltip" />
+     {/*      <Tooltip place="bottom" type="info" effect="solid" id="save-tooltip" /> */}
         </div>
       );
 }

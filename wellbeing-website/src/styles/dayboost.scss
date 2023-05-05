@@ -18,7 +18,7 @@
     .container {
         max-width: 60vw;
         height: inherit;
-        margin: 8rem auto 0;
+        margin: 30px auto 0;
 
         @media (max-width: 768px) {
             margin-top: 60px;
@@ -35,10 +35,14 @@
             @media (max-width: 768px) {
                 font-size: 28px;
             }
+
+            @media (min-width: 990px) {
+                min-height: 100px;
+            }
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 22px;
             margin-top: 10rem;
             color: white;
             text-align: start;

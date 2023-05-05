@@ -18,7 +18,7 @@
     .container {
         max-width: 60vw;
         height: inherit;
-        margin: 8rem auto 0;
+        margin: 30px auto 0;
 
         @media (max-width: 768px) {
             margin-top: 60px;
@@ -31,15 +31,19 @@
             font-weight: 400;
             letter-spacing: 2px;
             color: white;
+            margin-bottom: 4rem;
 
             @media (max-width: 768px) {
                 font-size: 28px;
             }
+
+            @media (min-width: 990px) {
+                min-height: 100px;
+            }
         }
 
         h2 {
-            font-size: 24px;
-
+            font-size: 22px;
             color: white;
             text-align: start;
             font-family: 'Montserrat', sans-serif;
@@ -60,11 +64,11 @@
         .text {
             text-align: left;
             margin-bottom: 2rem;
+            line-height: 1.5;
 
             @media (min-width: 990px) {
                 font-size: 20px;
-                margin-right: 10rem;
-                margin-bottom: 5rem;
+                margin-right: 2rem;
             }
         }
     }
