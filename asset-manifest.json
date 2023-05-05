@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Wellbeing-website/static/css/main.118b3305.css",
+    "main.css": "/Wellbeing-website/static/css/main.648e4df8.css",
     "main.js": "/Wellbeing-website/static/js/main.e79f5e3b.js",
     "static/js/787.c86c9a30.chunk.js": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js",
     "static/media/Montserrat-Bold.svg": "/Wellbeing-website/static/media/Montserrat-Bold.4fd9621bfedf847f86e5.svg",
@@ -77,12 +77,12 @@
     "static/media/FuturaBT-Light.woff2": "/Wellbeing-website/static/media/FuturaBT-Light.a6a7a173d93448ec240c.woff2",
     "static/media/Futura-Bold.woff2": "/Wellbeing-website/static/media/Futura-Bold.f9486ea9dfd58097f383.woff2",
     "index.html": "/Wellbeing-website/index.html",
-    "main.118b3305.css.map": "/Wellbeing-website/static/css/main.118b3305.css.map",
+    "main.648e4df8.css.map": "/Wellbeing-website/static/css/main.648e4df8.css.map",
     "main.e79f5e3b.js.map": "/Wellbeing-website/static/js/main.e79f5e3b.js.map",
     "787.c86c9a30.chunk.js.map": "/Wellbeing-website/static/js/787.c86c9a30.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.118b3305.css",
+    "static/css/main.648e4df8.css",
     "static/js/main.e79f5e3b.js"
   ]
 }
