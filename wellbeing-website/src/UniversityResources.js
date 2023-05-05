@@ -46,16 +46,14 @@ export default function UniversityResources() {
                 data-aos-duration="1000">University Resources</h1>
             <h2 data-aos="fade-up"
                 data-aos-delay="1000"
-                data-aos-duration="1000">Check these external resources for students suggested by your unviversity:</h2>
+                data-aos-duration="1000">Check these external resources for students from your unviversity:</h2>
             <div className="resources-container" data-aos="fade-up"
                 data-aos-delay="2000"
                 data-aos-duration="1000">
                 {resources.map((item, index) => 
-                  <div className='resource' key={index}>
-                    <a href={item.link} target="_blank">
+                    <a className='resource' key={"resource_" + index} href={item.link} target="_blank">
                       <p dangerouslySetInnerHTML={{ __html: item.text }}></p>
                     </a>
-                  </div>
                 )}
             </div>
 

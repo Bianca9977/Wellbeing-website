@@ -80,7 +80,7 @@ export default function FocusMusic() {
             <div className="resources-container" data-aos="fade-up"
                 data-aos-delay="2000"
                 data-aos-duration="1000">
-              <Carousel breakPoints={breakPoints}>
+              <Carousel breakPoints={breakPoints} enableMouseSwipe={false}>
                 {items.map((item) => (
                     <Item onClick={() => openModal(item.link)} key={item.id} item={item}></Item>
                 ))}

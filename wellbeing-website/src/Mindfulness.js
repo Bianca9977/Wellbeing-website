@@ -130,7 +130,7 @@ export default function Mindfulness() {
                     : (
                     <h2>Explore these meditation sessions:</h2>
                     )}
-                    <Carousel breakPoints={breakPoints}>
+                    <Carousel breakPoints={breakPoints} enableMouseSwipe={false}>
                         {getMoodArray().map((item) => (
                             <Item onClick={() => openModal(item.link)} key={item.id} item={item}></Item>
                         ))}

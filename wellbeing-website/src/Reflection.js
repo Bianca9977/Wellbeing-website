@@ -175,7 +175,7 @@ export default function Reflection() {
               <div className="text-area-container" data-aos="fade-up"
                 data-aos-delay="2000"
                 data-aos-duration="1000">
-                  <Carousel breakPoints={breakPoints}>
+                  <Carousel breakPoints={breakPoints} enableMouseSwipe={false}>
                       {getMoodArray().map((item, index) => (
                           <fieldset key={index}>
                             <legend className='legend' id={'legend-' +  index}>{item.question}</legend>
