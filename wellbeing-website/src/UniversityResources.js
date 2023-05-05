@@ -22,6 +22,10 @@ export default function UniversityResources() {
       {
         link: 'https://www.kth.se/en/student/stod',
         text: "Support and Guidance from KTH"
+      },
+      {
+        link: 'https://ths.kth.se/en/events',
+        text: 'THS Events'
       }
     ]
 

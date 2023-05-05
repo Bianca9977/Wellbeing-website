@@ -69,13 +69,14 @@ export default function Mindfulness() {
 
     const exploreRecomm = [
         {id: 1, title: '3 Minutes Meditation for Identifying Feelings', link: 'https://www.youtube.com/embed/2mcIUWOr3B4'},
-        {id: 2, title: '1 Minute Mini Meditation: Breathe', link: 'https://www.youtube.com/embed/cEqZthCaMpo'},
-        {id: 3, title: '1 Minute Mini Meditation: Appreciate Nature', link: 'https://www.youtube.com/embed/nsGbtrl1WkU'},
-        {id: 4, title: '1 Minute Mini Meditation: Unwind', link: 'https://www.youtube.com/embed/ldFD-L-Csz0'},
-        {id: 5, title: '10 Minutes Outdoor Walking Meditation', link: 'https://www.youtube.com/embed/HE9iP3B4Azo'},
-        {id: 6, title: '10 Minutes Reset Meditation', link: 'https://www.youtube.com/embed/QHkXvPq2pQE'},
-        {id: 7, title: '10 Minutes Meditation to Reframe Stress', link: 'https://www.youtube.com/embed/sG7DBA-mgFY'},
-        {id: 8, title: '12 Minutes Breathing Practice for Exams', link: 'https://www.youtube.com/embed/LBbQK2HIvvI'},
+        {id: 2, title: '3 Minutes Breathing Technique for Focus and Anxiety', link: 'https://www.youtube.com/embed/a7uQXDkxEtM'},
+        {id: 3, title: '1 Minute Mini Meditation: Breathe', link: 'https://www.youtube.com/embed/cEqZthCaMpo'},
+        {id: 4, title: '1 Minute Mini Meditation: Appreciate Nature', link: 'https://www.youtube.com/embed/nsGbtrl1WkU'},
+        {id: 5, title: '1 Minute Mini Meditation: Unwind', link: 'https://www.youtube.com/embed/ldFD-L-Csz0'},
+        {id: 6, title: '10 Minutes Outdoor Walking Meditation', link: 'https://www.youtube.com/embed/HE9iP3B4Azo'},
+        {id: 7, title: '10 Minutes Reset Meditation', link: 'https://www.youtube.com/embed/QHkXvPq2pQE'},
+        {id: 8, title: '10 Minutes Meditation to Reframe Stress', link: 'https://www.youtube.com/embed/sG7DBA-mgFY'},
+        {id: 9, title: '12 Minutes Breathing Practice for Exams', link: 'https://www.youtube.com/embed/LBbQK2HIvvI'},
     ]
 
     function getMoodArray() {
