@@ -60,12 +60,13 @@
 
         .text {
             text-align: left;
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
             
 
             @media (min-width: 990px) {
                 font-size: 20px;
                 margin-right: 10rem;
+                margin-bottom: 5rem;
             }
         }
 

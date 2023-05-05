@@ -155,6 +155,7 @@ export default function PeerSupport() {
 
                 <div>
                 {(mood !== 'explore') && <h2 className='margin-top text-center'>Recommended chat if you feel <span className='mood-text'>{mood}</span>:</h2>}
+                {(mood !== 'explore') &&
                 <div className='recommended-chats'>
                   {getMoodArray().map((item, index) => { 
                   return  item.recommended &&
@@ -165,19 +166,16 @@ export default function PeerSupport() {
                     </div>
                     })}
                 </div>
-                </div>
-                <div>
-                <div data-aos="fade-up"
-                data-aos-delay="3000"
-                data-aos-duration="1000">
-                  {(mood == 'explore') &&
-                    <h3 className='margin-top'>All available chats:</h3>
                 }
                 </div>
-                {(mood == 'explore') &&
-                <div className='other-chats' data-aos="fade-up"
-                data-aos-delay="3000"
-                data-aos-duration="1000">
+
+
+                <div>
+                {(mood === 'explore') &&
+                  <h2 className='margin-top text-center'>All available chats:</h2>
+                }
+                {(mood === 'explore') &&
+                <div className='other-chats'>
                   {getMoodArray().map((item, index) => { 
                   return !item.recommended &&
                       <div className='chat' key={index}>
@@ -187,7 +185,7 @@ export default function PeerSupport() {
                       </div>
                     })}
                 </div>
-                  }
+                }
                 </div>
               </div>
               <div>

@@ -42,7 +42,7 @@ export default function Home() {
     {
       value: 4,
       slug: 'explore',
-      label: "I don't know"
+      label: "Explore"
     }
   ];
 
