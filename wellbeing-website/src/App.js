@@ -14,12 +14,22 @@ import UniversityResources from './UniversityResources';
 import DayBoost from './DayBoost';
 import FocusMusic from './FocusMusic';
 import './styles/lightmode.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function App() {
 
     useEffect(() => {
       setTheme();
+      setAnimation();
+      AOS.init();
     }, []);
+
+    function setAnimation() {
+      if (!localStorage.getItem('showAnimation')) {
+        localStorage.setItem('showAnimation', false);
+      } 
+    }
 
     function setTheme() {
       if (localStorage.getItem('webTheme') == 'Dark') {

@@ -90,12 +90,12 @@ export default function PeerSupport() {
       {
         name: 'Casual Chat <br/><span> Click to join</span>',
         recommended: false,
-        link: 'https://discord.gg/BjUWETxkvC'
+        link: 'https://discord.gg/wqG4xW4fkP'
       },
       {
         name: 'Mindfulness Chat <br/><span> Click to join</span>',
         recommended: false,
-        link: 'https://discord.gg/wqG4xW4fkP'
+        link: 'https://discord.gg/BjUWETxkvC'
       },
       {
         name: 'Reflection Chat <br/><span> Click to join</span>',

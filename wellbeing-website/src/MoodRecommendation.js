@@ -1,19 +1,27 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { useParams } from "react-router-dom";
 import './styles/recommendations.scss';
 import ActivityCard from './components/ActivityCard';
 import Header from './components/Header';
 import BackButton from './components/BackButton';
 import { useNavigate } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function MoodRecommendation() {
     let params = useParams();
     const mood = params.mood;
-    let navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);
+       
+        const hasAnimationShown = localStorage.getItem('showAnimation');
+
+        if (!hasAnimationShown) {
+            localStorage.setItem('showAnimation', true);
+        }
     }, []);
+
 
     const timeResources = [
         {
@@ -81,27 +89,27 @@ export default function MoodRecommendation() {
             <Header />
             <BackButton />
             <div className='container'>
-            <div className="col-left" data-aos="fade-up"
+            <div className="col-left" data-aos={!localStorage.getItem('showAnimation')  ? "fade-up" : ""}
                 data-aos-delay="500"
                 data-aos-duration="1000">
                 <h1 className='title-text'>If you feel <br/><span className='mood-text'>{mood}</span></h1>
             </div>
-            <div className="col-right" data-aos="fade-up"
+            <div className="col-right" data-aos={!localStorage.getItem('showAnimation')  ? "fade-up" : ""}
                 data-aos-delay="2000"
                 data-aos-duration="1000">
-                <h2 data-aos="fade-up"
+                <h2 data-aos={!localStorage.getItem('showAnimation')  ? "fade-up" : ""}
                 data-aos-delay="1000"
                 data-aos-duration="1000">...have a look at...</h2>
-                <div data-aos="fade-up"
+                <div data-aos={!localStorage.getItem('showAnimation')  ? "fade-up" : ""}
                 data-aos-delay="3000"
                 data-aos-duration="1000" className='resources-container'>
                     <ActivityCard name={getTime().text} activityRoute={'/day-boost/' + getTime().route} />
                     { resourcesCards }
                 </div>
-                <h2 className="padding-top" data-aos="fade-up"
+                <h2 className="padding-top" data-aos={!localStorage.getItem('showAnimation')  ? "fade-up" : ""}
                 data-aos-delay="4000"
                 data-aos-duration="1000">...and try these activities tailored to your mood:</h2>
-                <div className='activities-container' data-aos="fade-up"
+                <div className='activities-container' data-aos={!localStorage.getItem('showAnimation')  ? "fade-up" : ""}
                 data-aos-delay="5000"
                 data-aos-duration="1000">
                     { recommendationsCards }
