@@ -7,6 +7,7 @@ import BackButton from './components/BackButton';
 import { useNavigate } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Aos from 'aos';
 
 export default function MoodRecommendation() {
     let params = useParams();
@@ -14,6 +15,8 @@ export default function MoodRecommendation() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        AOS.init();
        
         const hasAnimationShown = localStorage.getItem('showAnimation');
 
